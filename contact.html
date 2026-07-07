@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MicroPlan Studio</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --brand: #6366f1;
+        --brand-light: #eef2ff;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --white: #ffffff;
+        --radius: 8px;
+        --max-w: 780px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      /* ── Header ── */
+      header {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 0 24px;
+      }
+      .header-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 18px 0;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .logo-mark {
+        width: 32px;
+        height: 32px;
+        background: var(--brand);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+      }
+      .logo-text {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--text);
+      }
+      .nav-link {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+      .nav-link:hover {
+        color: var(--brand);
+      }
+
+      /* ── Hero banner ── */
+      .hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #fff;
+        padding: 64px 24px 56px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: clamp(28px, 6vw, 40px);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+      }
+      .hero p {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+
+      /* ── Main content ── */
+      .content {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        padding: 60px 24px;
+        text-align: center;
+      }
+
+      .contact-box {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 40px 32px;
+        margin: 32px 0;
+      }
+
+      .contact-box p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: var(--text);
+      }
+
+      .contact-email {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--brand);
+        word-break: break-all;
+      }
+
+      /* ── Footer ── */
+      footer {
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        padding: 24px;
+        text-align: center;
+        margin-top: 60px;
+      }
+      .footer-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+      }
+      .footer-link {
+        color: var(--brand);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        transition: opacity 0.2s ease;
+      }
+      .footer-link:hover {
+        opacity: 0.7;
+      }
+      .divider {
+        color: var(--border);
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <div class="logo-mark">M</div>
+          <span class="logo-text">MicroPlan Studio</span>
+        </a>
+        <a href="/" class="nav-link">← Back to Home</a>
+      </div>
+    </header>
+
+    <div class="hero">
+      <h1>Contact</h1>
+      <p>Get in touch with us.</p>
+    </div>
+
+    <div class="content">
+      <div class="contact-box">
+        <p>For inquiries, you may reach us at:</p>
+        <div class="contact-email">contact@microplanstudio.com</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <a href="/" class="footer-link">Home</a>
+        <span class="divider">•</span>
+        <a href="/about.html" class="footer-link">About</a>
+        <span class="divider">•</span>
+        <a href="/contact.html" class="footer-link">Contact</a>
+        <span class="divider">•</span>
+        <a href="/privacy-policy.html" class="footer-link">Privacy</a>
+        <span class="divider">•</span>
+        <a href="/terms-of-service.html" class="footer-link">Terms</a>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--muted)">
+          © 2026 MicroPlan Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

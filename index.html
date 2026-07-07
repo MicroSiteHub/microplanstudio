@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MicroPlan Studio — Free Printable Planner Generators</title>
+
+    <meta
+      name="description"
+      content="MicroPlan Studio offers free printable planner generators for daily planning, habits, fitness, budgeting, home, school, and wellness."
+    />
+
+    <!-- Fonts / Tailwind (kept similar to your current setup) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AdSense (same client ID as current page) -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861292512968172"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P54QP62CXN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-P54QP62CXN");
+    </script>
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="MicroPlan Studio — Free Printable Planner Generators"
+    />
+    <meta
+      property="og:description"
+      content="Generate free printable planners in seconds: daily, weekly, monthly, budget, habits, fitness, school, and more."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://microplanstudio.com" />
+    <meta
+      property="og:image"
+      content="https://microplanstudio.com/assets/og-image.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MicroPlan Studio — Free Printable Planner Generators"
+    />
+    <meta
+      name="twitter:description"
+      content="Generate free printable planners in seconds: daily, weekly, monthly, budget, habits, fitness, school, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://microplanstudio.com/assets/og-image.png"
+    />
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MicroPlan Studio",
+        "url": "https://microplanstudio.com",
+        "description": "Free printable planner generators for productivity, home, school, and wellness.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MicroPlan Studio"
+        }
+      }
+    </script>
+
+    <style>
+      :root {
+        --navy: #0f172a;
+        --indigo: #6366f1;
+        --indigo-dark: #4f46e5;
+        --indigo-light: #818cf8;
+        --slate-text: #64748b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .hero-glow {
+        background: radial-gradient(
+          ellipse 60% 50% at 50% 40%,
+          rgba(99, 102, 241, 0.18) 0%,
+          transparent 70%
+        );
+      }
+
+      .card-hover {
+        transition: all 0.2s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      }
+
+      .nav-link {
+        position: relative;
+        transition: color 0.2s ease;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--indigo);
+        border-radius: 1px;
+        transition: width 0.2s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-slate-800">
+    <!-- Top nav -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/60"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16"
+      >
+        <a href="#" class="flex items-center gap-2.5 shrink-0">
+          <div
+            class="w-8 h-8 rounded-lg bg-indigo flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-sm leading-none">M</span>
+          </div>
+          <span class="text-navy font-bold text-lg tracking-tight"
+            >MicroPlan Studio</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center gap-6">
+          <a
+            href="#tools"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+          >
+            Tools
+          </a>
+          <a
+            href="/all-tools.html"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+          >
+            All Tools
+          </a>
+          <a
+            href="#about"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+          >
+            About
+          </a>
+          <a
+            href="#daily-planner"
+            class="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full inline-flex items-center gap-1.5"
+          >
+            Try Daily Planner
+            <i class="w-4 h-4" data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative bg-[#0f172a] overflow-hidden">
+        <!-- Improved glow -->
+        <div
+          class="absolute inset-0 pointer-events-none"
+          style="
+            background: radial-gradient(
+              circle at 50% 38%,
+              rgba(99, 102, 241, 0.35) 0%,
+              rgba(99, 102, 241, 0.18) 28%,
+              transparent 70%
+            );
+          "
+        ></div>
+
+        <div
+          class="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24 text-center"
+        >
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight"
+          >
+            Plan Less.<br class="sm:hidden" />
+            Accomplish More.
+          </h1>
+
+          <p
+            class="mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed"
+          >
+            MicroPlan Studio builds focused micro-tools that help you structure
+            your day, week, goals, budget, home, school, and wellness—one small
+            plan at a time.
+          </p>
+
+          <div
+            class="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              href="#daily-planner"
+              class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3.5 rounded-full inline-flex items-center justify-center gap-2 text-base"
+            >
+              Try the Daily Planner
+              <i class="w-4 h-4" data-lucide="arrow-right"></i>
+            </a>
+
+            <a
+              href="#tools"
+              class="border border-slate-300 text-white/90 px-7 py-3.5 rounded-full inline-flex items-center justify-center gap-2 text-base"
+            >
+              Browse all tools
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured: Daily Planner -->
+      <section id="daily-planner" class="bg-slate-50 py-20 md:py-28">
+        <div class="max-w-6xl mx-auto px-5 md:px-8">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+          >
+            <div class="order-2 lg:order-1">
+              <span
+                class="inline-block text-xs font-bold text-indigo bg-indigo/10 px-3 py-1.5 rounded-full mb-5"
+              >
+                Featured Tool
+              </span>
+              <h2
+                class="text-3xl md:text-4xl font-bold text-navy leading-tight mb-4"
+              >
+                Daily Planner Generator
+              </h2>
+              <p class="text-base text-slate-600 leading-relaxed mb-6 max-w-xl">
+                Generate a beautiful, printable daily planner in seconds.
+                Customize your time blocks, priorities, and schedule, then
+                download as a clean PDF.
+              </p>
+              <a
+                href="https://daily.microplanstudio.com"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-indigo text-white font-semibold text-sm"
+              >
+                Open Daily Planner
+                <i class="w-4 h-4" data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="order-1 lg:order-2 flex justify-center">
+              <div
+                class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 p-4 md:p-6 border border-slate-100"
+              >
+                <img
+                  src="DailyPlannerPreview.png"
+                  alt="Daily Planner Preview"
+                  class="rounded-xl shadow-lg border border-slate-200"
+                  style="width: 340px; max-width: 100%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools grid -->
+      <section id="tools" class="bg-white py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+          <div class="max-w-2xl mx-auto text-center mb-10 md:mb-14">
+            <span
+              class="inline-block text-xs font-bold text-indigo bg-indigo/10 px-3 py-1.5 rounded-full mb-4"
+            >
+              Free planner tools
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3">
+              All MicroPlan Studio Generators
+            </h2>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              Each tool focuses on a single planning need—daily, weekly, budget,
+              habits, home, school, and wellness. Click any generator to open it
+              in a new tab and create a printable PDF.
+            </p>
+          </div>
+
+          <!-- Categories -->
+          <div class="space-y-10">
+            <!-- Productivity -->
+            <div>
+              <h3 class="text-lg font-semibold text-navy mb-4">
+                Productivity & Planning
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a
+                  href="https://daily.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Daily Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan your day with time blocks, priorities, and tasks.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    daily.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://weekly.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Weekly Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Map out your week with a clean, printable layout.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    weekly.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://monthly.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Monthly Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan your month with a simple calendar-style grid.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    monthly.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://timeblock.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Time Block Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Create focused time-block schedules for deep work.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    timeblock.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://todo.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      To-Do List Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Generate clean, printable task lists with priorities.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    todo.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://project.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Project Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Break projects into tasks, milestones, and deadlines.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    project.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://goals.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Goal Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Set goals, action steps, and timelines in a simple layout.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    goals.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://weeklyreview.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Weekly Review Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Reflect on wins, challenges, habits, and next-week goals.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    weeklyreview.microplanstudio.com
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Habits & Home -->
+            <div>
+              <h3 class="text-lg font-semibold text-navy mb-4">
+                Habits, Home & Life
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a
+                  href="https://habits.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Habit Tracker Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Track daily and weekly habits with a checkbox grid.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    habits.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://chores.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Chore Chart Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Create chore charts for kids, families, or roommates.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    chores.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://cleaning.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Cleaning Schedule Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan weekly or monthly cleaning tasks by room or zone.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    cleaning.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://homemaintenance.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Home Maintenance Log Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Track home maintenance tasks, dates, and notes.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    homemaintenance.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://budget.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Budget Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan income, expenses, and savings in a simple budget
+                      layout.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    budget.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://meals.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Meal Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan breakfasts, lunches, dinners, and snacks for the
+                      week.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    meals.microplanstudio.com
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- School & Learning -->
+            <div>
+              <h3 class="text-lg font-semibold text-navy mb-4">
+                School, Study & Reading
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a
+                  href="https://study.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Study Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Organize subjects, assignments, and exam prep.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    study.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://reading.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Reading Log Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Track books, authors, dates, and ratings.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    reading.microplanstudio.com
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Wellness -->
+            <div>
+              <h3 class="text-lg font-semibold text-navy mb-4">
+                Health & Wellness
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a
+                  href="https://fitness.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Fitness Planner Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Plan workouts, sets, reps, and weekly fitness goals.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    fitness.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://water.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Water Tracker Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Track daily water intake across the week.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    water.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://sleep.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Sleep Tracker Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Log bedtime, wake time, hours slept, and sleep quality.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    sleep.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://mood.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Mood Tracker Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Track daily mood with a simple 5-point scale and notes.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    mood.microplanstudio.com
+                  </p>
+                </a>
+
+                <a
+                  href="https://gratitude.microplanstudio.com"
+                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
+                  target="_blank"
+                >
+                  <div>
+                    <p class="text-sm font-semibold text-navy">
+                      Gratitude Journal Generator
+                    </p>
+                    <p class="text-xs text-slate-600 mt-1">
+                      Create a calming, printable gratitude journal page to
+                      reflect on positive moments.
+                    </p>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">
+                    gratitude.microplanstudio.com
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Statement -->
+      <section class="bg-white py-12 md:py-16 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <div class="text-center mb-8">
+            <p
+              class="text-sm font-bold text-indigo uppercase tracking-wide mb-2"
+            >
+              Our Mission
+            </p>
+            <h2 class="text-2xl md:text-3xl font-bold text-navy">
+              Planning should be simple, free, and private.
+            </h2>
+          </div>
+          <p
+            class="text-center text-sm md:text-base text-slate-600 leading-relaxed max-w-3xl mx-auto"
+          >
+            MicroPlan Studio provides no-signup planner generators designed for
+            real-world use. Create printable PDFs in seconds, customize to your
+            needs, and print—no tracking, no complexity, no cost.
+          </p>
+        </div>
+      </section>
+
+      <!-- What We Offer -->
+      <section class="bg-slate-50 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-2 text-center">
+            What MicroPlan Studio Offers
+          </h2>
+          <p class="text-center text-slate-600 text-sm md:text-base mb-10">
+            Each tool is built for a single planning need.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">✓ Instant Generation</p>
+              <p class="text-sm text-slate-600">
+                Create beautiful, printable PDFs in seconds. No waiting, no
+                processing fees.
+              </p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">✓ No Account Required</p>
+              <p class="text-sm text-slate-600">
+                Use all tools without signup. Your planner is yours alone—no
+                cloud storage, no account tracking.
+              </p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">✓ Fully Customizable</p>
+              <p class="text-sm text-slate-600">
+                Adjust time slots, priorities, categories, and layout. Every
+                planner adapts to your workflow.
+              </p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">✓ Privacy-First Design</p>
+              <p class="text-sm text-slate-600">
+                All processing happens in your browser. No data is sent to any
+                server. Your information stays with you.
+              </p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">✓ Print-Ready Output</p>
+              <p class="text-sm text-slate-600">
+                PDFs are optimized for printing on standard paper. Clean
+                layouts, professional finish.
+              </p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-5">
+              <p class="font-semibold text-navy mb-2">
+                ✓ Continuously Improved
+              </p>
+              <p class="text-sm text-slate-600">
+                Tools are refined regularly based on user feedback and
+                real-world usage patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Free -->
+      <section class="bg-white py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4 text-center">
+            Why These Tools Are Free
+          </h2>
+          <p
+            class="text-sm md:text-base text-slate-600 leading-relaxed mb-6 max-w-3xl mx-auto"
+          >
+            MicroPlan Studio is supported by unobtrusive advertising. We believe
+            planning tools should be accessible to everyone, regardless of
+            income. AdSense helps us maintain and develop these tools while
+            keeping them free.
+          </p>
+          <p
+            class="text-sm md:text-base text-slate-600 leading-relaxed max-w-3xl mx-auto"
+          >
+            We've chosen AdSense specifically because it aligns with our values:
+            respectful, non-tracking advertising that doesn't compromise your
+            privacy. No personal data is collected for advertising purposes.
+            Tools work the same way with or without ads enabled.
+          </p>
+        </div>
+      </section>
+
+      <!-- Privacy First -->
+      <section class="bg-slate-50 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4 text-center">
+            Privacy First
+          </h2>
+          <div class="max-w-3xl mx-auto space-y-4">
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              <strong>Zero Data Collection:</strong> MicroPlan Studio does not
+              collect, store, or sell personal information. Your planners and
+              customizations exist only on your device.
+            </p>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              <strong>Browser-Based Processing:</strong> All planner generation
+              happens in your browser. No data is sent to servers. Your
+              information never leaves your device.
+            </p>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              <strong>Transparent Practices:</strong> See our
+              <a href="/privacy-policy.html" class="text-indigo font-semibold"
+                >Privacy Policy</a
+              >
+              for complete details on how we handle analytics and advertising.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="bg-white py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-navy mb-10 text-center"
+          >
+            How It Works
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
+              >
+                1
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Choose a Planner</h3>
+              <p class="text-sm text-slate-600">
+                Browse from 20+ generators covering productivity, home,
+                learning, and wellness.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
+              >
+                2
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Customize It</h3>
+              <p class="text-sm text-slate-600">
+                Adjust dates, time slots, categories, and content to match your
+                needs exactly.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
+              >
+                3
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Download & Print</h3>
+              <p class="text-sm text-slate-600">
+                Get a clean PDF ready for printing. Use it immediately on paper
+                or digitally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / SEO text -->
+      <section
+        id="about"
+        class="bg-slate-50 py-16 md:py-20 border-t border-slate-200"
+      >
+        <div class="max-w-5xl mx-auto px-5 md:px-8">
+          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4">
+            About MicroPlan Studio
+          </h2>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+            MicroPlan Studio is a collection of focused, free planner generators
+            created for people who value simplicity and privacy. Each tool
+            creates a clean, printable PDF in seconds—no signup, no account,
+            just simple structure for your day, week, goals, home, school, and
+            wellness.
+          </p>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
+            We continuously add new tools and refine existing planners based on
+            how people actually use them. Our design philosophy is
+            straightforward: do one thing well. Every generator is optimized for
+            both digital customization and print quality.
+          </p>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            For premium, fully designed planner templates, visit
+            <a
+              href="https://www.etsy.com/shop/SystemCraftAIStudio"
+              target="_blank"
+              class="text-indigo font-semibold"
+              >SystemCraft AI Studio</a
+            >—MicroPlan Studio focuses on free generators, while SystemCraft
+            offers polished, customizable planners.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 mt-4">
+      <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-col gap-4">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-3"
+        >
+          <p class="text-xs text-slate-500">
+            © 2026 MicroPlan Studio — Free planner tools
+          </p>
+          <div class="flex items-center gap-4 text-xs text-slate-500">
+            <a href="/about.html" class="hover:text-navy"> About </a>
+            <span>•</span>
+            <a href="/contact.html" class="hover:text-navy"> Contact </a>
+            <span>•</span>
+            <a href="/privacy-policy.html" class="hover:text-navy"> Privacy </a>
+            <span>•</span>
+            <a href="/terms-of-service.html" class="hover:text-navy"> Terms </a>
+          </div>
+        </div>
+        <div
+          class="text-center text-xs text-slate-400 border-t border-slate-100 pt-3"
+        >
+          <p>
+            Site actively maintained and monitored for stability and
+            performance.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

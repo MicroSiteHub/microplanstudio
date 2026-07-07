@@ -1,0 +1,23 @@
+{
+  "name": "Daily Planner",
+  "subdomain": "daily",
+  "repofolder": "daily-planner-generator",
+  "category": "productivity",
+
+  "title": "Daily Planner Generator",
+  "tagline": "Plan your day with priorities, schedule blocks, and tasks.",
+  "description": "Generate a clean, printable daily planner PDF with schedule blocks, priorities, and tasks.",
+  "og_description": "Create a simple, printable daily planner PDF in seconds.",
+
+  "intro": "Start each day with intention instead of reactivity. This free daily planner generator creates a customizable, printable daily schedule that helps you prioritize, time-block, and execute. Whether you're managing work projects, household responsibilities, or personal goals, a structured plan keeps you focused and reduces decision fatigue. Without a plan, your day is controlled by emails, interruptions, and urgency rather than your priorities. This generator lets you add priorities, time blocks, task lists, and notes—then generates a print-ready planner you can use offline. Start your morning with clarity, work with focus, and end your day knowing you accomplished what matters most.",
+
+  "seo": {
+    "p1": "This free daily planner generator helps you organize your day with time blocks, priorities, and tasks.",
+    "p2": "Perfect for productivity, work planning, and daily organization. No signup required."
+  },
+
+  "related": ["weekly", "monthly", "timeblock", "todo"],
+  "cross": ["habits", "meals"],
+
+  "generator_ui_template": "daily-ui.html"
+}

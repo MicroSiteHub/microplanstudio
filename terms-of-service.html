@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - MicroPlan Studio</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --brand: #2563eb;
+        --brand-light: #eff6ff;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --white: #ffffff;
+        --radius: 8px;
+        --max-w: 780px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      /* ── Header ── */
+      header {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 0 24px;
+      }
+      .header-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 0;
+      }
+      .logo-mark {
+        width: 36px;
+        height: 36px;
+        background: var(--brand);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .logo-mark svg {
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+      }
+      .logo-text {
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text);
+      }
+      .logo-text span {
+        color: var(--brand);
+      }
+
+      /* ── Hero banner ── */
+      .hero {
+        background: #0f172a;
+        color: #fff;
+        padding: 56px 24px 48px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: clamp(26px, 5vw, 36px);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .hero p {
+        margin-top: 10px;
+        font-size: 15px;
+        opacity: 0.75;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        padding: 4px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      /* ── Layout ── */
+      .layout {
+        max-width: var(--max-w);
+        margin: 48px auto 80px;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      /* ── Sticky TOC ── */
+      .toc {
+        position: sticky;
+        top: 24px;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px;
+      }
+      .toc-title {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 12px;
+      }
+      .toc ol {
+        list-style: none;
+      }
+      .toc ol li a {
+        display: block;
+        padding: 5px 0;
+        font-size: 13px;
+        color: var(--muted);
+        text-decoration: none;
+        border-left: 2px solid transparent;
+        padding-left: 10px;
+        transition:
+          color 0.15s,
+          border-color 0.15s;
+      }
+      .toc ol li a:hover {
+        color: var(--brand);
+        border-left-color: var(--brand);
+      }
+
+      /* ── Content ── */
+      .content {
+        min-width: 0;
+      }
+
+      .section {
+        margin-bottom: 48px;
+        scroll-margin-top: 24px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .section-num {
+        width: 32px;
+        height: 32px;
+        background: #f1f5f9;
+        color: #334155;
+        border-radius: 50%;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .section h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .section p,
+      .section li {
+        font-size: 15px;
+        color: #334155;
+      }
+      .section p {
+        margin-bottom: 12px;
+      }
+      .section ul,
+      .section ol {
+        padding-left: 20px;
+        margin-bottom: 12px;
+      }
+      .section li {
+        margin-bottom: 6px;
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--text);
+        margin: 20px 0 8px;
+      }
+
+      .callout {
+        background: #fefce8;
+        border-left: 4px solid #eab308;
+        border-radius: 0 var(--radius) var(--radius) 0;
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #713f12;
+      }
+
+      .callout-blue {
+        background: var(--brand-light);
+        border-left: 4px solid var(--brand);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        padding: 14px 18px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #1e3a8a;
+      }
+
+      .highlight-box {
+        background: #fff1f2;
+        border: 1px solid #fecdd3;
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #881337;
+      }
+      .highlight-box strong {
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 48px 0;
+      }
+
+      /* ── Contact card ── */
+      .contact-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 24px;
+      }
+      .contact-card p {
+        margin-bottom: 6px;
+      }
+      .contact-card a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+      .contact-card a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── Footer ── */
+      footer {
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        text-align: center;
+        padding: 28px 24px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      footer a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 680px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .toc {
+          position: static;
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861292512968172"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ═══ HEADER ═══ -->
+    <header>
+      <div class="header-inner">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 3.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0z"
+            />
+          </svg>
+        </div>
+        <span class="logo-text">MicroPlan <span>Studio</span></span>
+      </div>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <div class="badge">Legal</div>
+      <h1>Terms of Service</h1>
+      <p>Last updated: June 14, 2026 &nbsp;·&nbsp; Effective: June 14, 2026</p>
+    </section>
+
+    <!-- ═══ MAIN LAYOUT ═══ -->
+    <div class="layout">
+      <!-- Table of Contents -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title">Contents</div>
+        <ol>
+          <li><a href="#s1">Acceptance</a></li>
+          <li><a href="#s2">About MicroPlan Studio</a></li>
+          <li><a href="#s3">Eligibility</a></li>
+          <li><a href="#s4">Products &amp; Licenses</a></li>
+          <li><a href="#s5">Payments &amp; Refunds</a></li>
+          <li><a href="#s6">Permitted Use</a></li>
+          <li><a href="#s7">Prohibited Conduct</a></li>
+          <li><a href="#s8">Intellectual Property</a></li>
+          <li><a href="#s9">User-Generated Content</a></li>
+          <li><a href="#s10">Third-Party Services</a></li>
+          <li><a href="#s11">Advertising</a></li>
+          <li><a href="#s12">Disclaimers</a></li>
+          <li><a href="#s13">Limitation of Liability</a></li>
+          <li><a href="#s14">Indemnification</a></li>
+          <li><a href="#s15">Termination</a></li>
+          <li><a href="#s16">Governing Law</a></li>
+          <li><a href="#s17">Dispute Resolution</a></li>
+          <li><a href="#s18">Modifications</a></li>
+          <li><a href="#s19">General Provisions</a></li>
+          <li><a href="#s20">Contact</a></li>
+        </ol>
+      </nav>
+
+      <!-- Content -->
+      <main class="content">
+        <!-- 1 -->
+        <div class="section" id="s1">
+          <div class="section-header">
+            <div class="section-num">1</div>
+            <h2>Acceptance of Terms</h2>
+          </div>
+          <div class="callout">
+            Please read these Terms of Service carefully before using MicroPlan
+            Studio's websites, products, or services.
+          </div>
+          <p>
+            These Terms of Service ("<strong>Terms</strong>") constitute a
+            legally binding agreement between you ("<strong>User</strong>,"
+            "<strong>you</strong>," or "<strong>your</strong>") and MicroPlan
+            Studio ("<strong>MicroPlan Studio</strong>," "<strong>we</strong>,"
+            "<strong>us</strong>," or "<strong>our</strong>") governing your
+            access to and use of our websites, digital products, micro-sites,
+            templates, planning tools, and related services (collectively, the
+            "<strong>Services</strong>").
+          </p>
+          <p>
+            By accessing our websites, downloading or purchasing a product, or
+            otherwise using our Services, you acknowledge that you have read,
+            understood, and agree to be bound by these Terms and our
+            <a href="privacy-policy.html" style="color: var(--brand)"
+              >Privacy Policy</a
+            >, which is incorporated herein by reference. If you do not agree to
+            these Terms, you must immediately cease use of our Services.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 2 -->
+        <div class="section" id="s2">
+          <div class="section-header">
+            <div class="section-num">2</div>
+            <h2>About MicroPlan Studio</h2>
+          </div>
+          <p>
+            MicroPlan Studio is an independent small business that designs and
+            distributes digital products, including but not limited to planning
+            templates, productivity tools, micro-site kits, and related
+            downloadable resources. Our Services are provided primarily online
+            and are intended for personal and small-business use unless
+            otherwise specified.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 3 -->
+        <div class="section" id="s3">
+          <div class="section-header">
+            <div class="section-num">3</div>
+            <h2>Eligibility</h2>
+          </div>
+          <p>
+            You must be at least <strong>13 years of age</strong> (or the age of
+            digital consent in your jurisdiction, whichever is higher) to use
+            our Services. By using our Services, you represent and warrant that
+            you meet this age requirement and that you have the legal capacity
+            to enter into a binding contract under applicable law.
+          </p>
+          <p>
+            If you are accessing or using the Services on behalf of a business
+            or legal entity, you represent that you have authority to bind that
+            entity to these Terms, and references to "you" include both you
+            individually and that entity.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 4 -->
+        <div class="section" id="s4">
+          <div class="section-header">
+            <div class="section-num">4</div>
+            <h2>Digital Products &amp; Licenses</h2>
+          </div>
+
+          <h3>4.1 Nature of Products</h3>
+          <p>
+            MicroPlan Studio sells and distributes digital products delivered
+            electronically. Upon completed purchase or authorized download, we
+            grant you a limited, non-exclusive, non-transferable, revocable
+            license to use the product for the purposes and within the scope
+            described at the point of sale.
+          </p>
+
+          <h3>4.2 Personal License (Default)</h3>
+          <p>
+            Unless a commercial or extended license is purchased, all products
+            are licensed for <strong>personal, non-commercial use only</strong>.
+            You may:
+          </p>
+          <ul>
+            <li>Use the product for yourself or within your own household;</li>
+            <li>
+              Make a reasonable number of backup copies for personal archival
+              purposes; and
+            </li>
+            <li>
+              Modify templates for your own personal use, provided the modified
+              version is not redistributed.
+            </li>
+          </ul>
+
+          <h3>4.3 Commercial License</h3>
+          <p>
+            Where a commercial or extended license is explicitly offered and
+            purchased, the scope of permitted use will be described in the
+            specific product listing. A commercial license does not grant
+            ownership of the underlying intellectual property.
+          </p>
+
+          <h3>4.4 Restrictions</h3>
+          <p>Regardless of license type, you may <strong>not</strong>:</p>
+          <ul>
+            <li>
+              Resell, redistribute, sublicense, or transfer any product or
+              license to a third party;
+            </li>
+            <li>
+              Share download links or files with individuals who have not
+              purchased a license;
+            </li>
+            <li>
+              Use products to create competing products or services offered for
+              sale;
+            </li>
+            <li>
+              Remove, alter, or obscure any copyright, trademark, or proprietary
+              notices; or
+            </li>
+            <li>
+              Use products in any unlawful manner or in violation of any
+              applicable regulations.
+            </li>
+          </ul>
+
+          <h3>4.5 Free Resources</h3>
+          <p>
+            Free downloads and resources are provided under the same
+            restrictions as a Personal License unless otherwise stated. "Free"
+            refers solely to price; all intellectual property rights are
+            retained by MicroPlan Studio.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 5 -->
+        <div class="section" id="s5">
+          <div class="section-header">
+            <div class="section-num">5</div>
+            <h2>Payments, Pricing &amp; Refunds</h2>
+          </div>
+
+          <h3>5.1 Pricing</h3>
+          <p>
+            All prices are listed in US Dollars (USD) unless otherwise stated
+            and are subject to change without notice. Applicable taxes may be
+            added at checkout based on your location.
+          </p>
+
+          <h3>5.2 Payment Processing</h3>
+          <p>
+            Payments are processed by trusted third-party payment processors
+            (such as Stripe, PayPal, or Gumroad). By making a purchase, you also
+            agree to the terms and privacy policies of the applicable payment
+            processor. MicroPlan Studio does not store your full payment card
+            details.
+          </p>
+
+          <h3>5.3 Refund Policy</h3>
+          <p>
+            Because our products are digital and immediately accessible upon
+            purchase, <strong>all sales are generally final</strong>. However,
+            we understand that issues arise and we assess refund requests on a
+            case-by-case basis. You may be eligible for a refund or store credit
+            if:
+          </p>
+          <ul>
+            <li>
+              The product has a significant technical defect that we are unable
+              to remedy;
+            </li>
+            <li>
+              The product was materially misrepresented in the listing; or
+            </li>
+            <li>You were charged in error (e.g., duplicate transaction).</li>
+          </ul>
+          <p>
+            Refund requests must be submitted within <strong>14 days</strong> of
+            purchase by contacting us at the address in Section 20. We reserve
+            the right to decline refund requests that do not meet the above
+            criteria, or where we suspect abuse of our refund policy.
+          </p>
+
+          <h3>5.4 Chargebacks</h3>
+          <p>
+            Initiating an unwarranted chargeback is a breach of these Terms.
+            MicroPlan Studio reserves the right to dispute chargebacks and to
+            terminate access to Services for accounts involved in fraudulent
+            chargeback activity.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 6 -->
+        <div class="section" id="s6">
+          <div class="section-header">
+            <div class="section-num">6</div>
+            <h2>Permitted Use of Services</h2>
+          </div>
+          <p>
+            You agree to use our Services only for lawful purposes and in
+            accordance with these Terms. Permitted uses include:
+          </p>
+          <ul>
+            <li>Browsing our websites for informational purposes;</li>
+            <li>
+              Downloading and using purchased or authorized products within your
+              license scope;
+            </li>
+            <li>
+              Subscribing to newsletters and communications (with your consent);
+              and
+            </li>
+            <li>
+              Contacting us with legitimate inquiries or support requests.
+            </li>
+          </ul>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 7 -->
+        <div class="section" id="s7">
+          <div class="section-header">
+            <div class="section-num">7</div>
+            <h2>Prohibited Conduct</h2>
+          </div>
+          <p>You agree that you will <strong>not</strong>:</p>
+          <ul>
+            <li>
+              Use any automated tool (bot, scraper, spider, crawler) to access,
+              copy, or index our Services without our express written
+              permission;
+            </li>
+            <li>
+              Attempt to gain unauthorised access to any portion of our systems,
+              servers, or networks;
+            </li>
+            <li>
+              Transmit any viruses, malware, or other harmful code through our
+              Services;
+            </li>
+            <li>
+              Impersonate MicroPlan Studio, its staff, or any other person or
+              entity;
+            </li>
+            <li>
+              Engage in any activity that could damage, overburden, or impair
+              the proper functioning of our Services;
+            </li>
+            <li>
+              Circumvent, disable, or interfere with security features, digital
+              rights management, or access controls;
+            </li>
+            <li>
+              Use our Services to generate or distribute spam, phishing, or
+              deceptive communications; or
+            </li>
+            <li>
+              Violate any applicable local, national, or international law or
+              regulation.
+            </li>
+          </ul>
+          <p>
+            We reserve the right to investigate and take appropriate action,
+            including terminating access, reporting to law enforcement, or
+            seeking legal remedies, against anyone who violates this section.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 8 -->
+        <div class="section" id="s8">
+          <div class="section-header">
+            <div class="section-num">8</div>
+            <h2>Intellectual Property</h2>
+          </div>
+          <p>
+            All content on our websites and within our digital products —
+            including but not limited to text, graphics, logos, icons, images,
+            audio clips, templates, code, and software — is the exclusive
+            property of MicroPlan Studio or its licensors and is protected by
+            applicable copyright, trademark, and other intellectual property
+            laws.
+          </p>
+
+          <h3>8.1 Our Rights</h3>
+          <p>
+            The MicroPlan Studio name, logo, and product names are trademarks of
+            MicroPlan Studio. Nothing in these Terms grants you any right to use
+            our trademarks, trade names, or branding without our prior written
+            consent.
+          </p>
+
+          <h3>8.2 Your License</h3>
+          <p>
+            Subject to these Terms, we grant you a limited, personal,
+            non-transferable license to access and use the Services for their
+            intended purpose. This license does not include the right to:
+          </p>
+          <ul>
+            <li>
+              Reproduce, modify, create derivative works from, or distribute our
+              content for public or commercial purposes;
+            </li>
+            <li>
+              Reverse-engineer or decompile any software component of our
+              Services; or
+            </li>
+            <li>
+              Remove any proprietary notices or labels from products or
+              materials.
+            </li>
+          </ul>
+
+          <h3>8.3 Feedback</h3>
+          <p>
+            If you submit suggestions, ideas, or feedback about our Services,
+            you grant MicroPlan Studio a perpetual, irrevocable, royalty-free,
+            worldwide license to use, modify, and incorporate that feedback for
+            any purpose without compensation or attribution to you.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 9 -->
+        <div class="section" id="s9">
+          <div class="section-header">
+            <div class="section-num">9</div>
+            <h2>User-Generated Content</h2>
+          </div>
+          <p>
+            Where our Services allow you to submit content (e.g., reviews,
+            comments, or forum posts), you represent that your content: (a) is
+            original or you have the right to share it; (b) does not infringe
+            any third-party intellectual property rights; (c) does not contain
+            unlawful, defamatory, obscene, or harmful material; and (d) complies
+            with all applicable laws.
+          </p>
+          <p>
+            By submitting content, you grant MicroPlan Studio a non-exclusive,
+            royalty-free, worldwide license to use, display, and distribute that
+            content in connection with our Services. We reserve the right to
+            remove any content that violates these Terms or that we deem
+            inappropriate, at our sole discretion.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 10 -->
+        <div class="section" id="s10">
+          <div class="section-header">
+            <div class="section-num">10</div>
+            <h2>Third-Party Services &amp; Links</h2>
+          </div>
+          <p>
+            Our Services may integrate with or link to third-party websites,
+            platforms, payment processors, or software tools. These integrations
+            are provided for your convenience and do not constitute an
+            endorsement of the third party or its products and services.
+          </p>
+          <p>
+            MicroPlan Studio has no control over third-party services and
+            accepts no responsibility for their content, accuracy, availability,
+            or privacy practices. Your interactions with third-party services
+            are solely between you and the third party, and are governed by that
+            party's own terms and policies.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 11 -->
+        <div class="section" id="s11">
+          <div class="section-header">
+            <div class="section-num">11</div>
+            <h2>Advertising</h2>
+          </div>
+          <div class="callout-blue">
+            MicroPlan Studio displays advertisements through Google AdSense and
+            similar networks to support the operation of free resources and keep
+            our products affordable.
+          </div>
+          <p>
+            Ads appearing on our websites are served by Google AdSense and
+            potentially other advertising networks. MicroPlan Studio does not
+            endorse any product or service advertised through these networks and
+            is not responsible for the content of third-party advertisements. We
+            are not liable for any loss or damage that may arise from your
+            reliance on or interaction with any advertisement.
+          </p>
+          <p>
+            You may opt out of personalised advertising at any time. Please
+            refer to our
+            <a href="privacy-policy.html#s6" style="color: var(--brand)"
+              >Privacy Policy, Section 6</a
+            >
+            for full details and opt-out instructions.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 12 -->
+        <div class="section" id="s12">
+          <div class="section-header">
+            <div class="section-num">12</div>
+            <h2>Disclaimers</h2>
+          </div>
+          <div class="highlight-box">
+            <strong>⚠ Important - Please Read</strong>
+            The following disclaimers limit MicroPlan Studio's liability. Read
+            carefully before using our Services.
+          </div>
+
+          <h3>12.1 "As Is" Provision</h3>
+          <p>
+            TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, OUR SERVICES AND
+            PRODUCTS ARE PROVIDED ON AN "<strong>AS IS</strong>" AND "<strong
+              >AS AVAILABLE</strong
+            >" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+            INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
+          </p>
+
+          <h3>12.2 No Guarantee of Results</h3>
+          <p>
+            MicroPlan Studio does not warrant that our digital products —
+            including planning templates, organisational tools, and micro-site
+            kits — will produce any specific outcome, financial result, or
+            business success for you. Results depend on many factors outside our
+            control and will vary by individual.
+          </p>
+
+          <h3>12.3 No Professional Advice</h3>
+          <p>
+            Nothing in our Services constitutes legal, financial, accounting,
+            tax, medical, or other professional advice. Our products are
+            general-purpose tools and should not be used as a substitute for
+            qualified professional guidance tailored to your specific
+            circumstances.
+          </p>
+
+          <h3>12.4 Availability &amp; Accuracy</h3>
+          <p>
+            We do not guarantee that our Services will be uninterrupted,
+            error-free, or free of viruses or other harmful components. We
+            reserve the right to modify, suspend, or discontinue any part of the
+            Services at any time without notice. While we strive for accuracy,
+            we do not warrant that all content is current, complete, or
+            error-free.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 13 -->
+        <div class="section" id="s13">
+          <div class="section-header">
+            <div class="section-num">13</div>
+            <h2>Limitation of Liability</h2>
+          </div>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+            MICROPLAN STUDIO, ITS OWNERS, EMPLOYEES, CONTRACTORS, PARTNERS,
+            LICENSORS, OR SUPPLIERS BE LIABLE FOR ANY:
+          </p>
+          <ul>
+            <li>
+              INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES;
+            </li>
+            <li>
+              LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS
+              OPPORTUNITIES;
+            </li>
+            <li>
+              DAMAGES RESULTING FROM YOUR INABILITY TO ACCESS OR USE THE
+              SERVICES;
+            </li>
+            <li>
+              DAMAGES RESULTING FROM THIRD-PARTY CONDUCT, CONTENT, OR SERVICES;
+              OR
+            </li>
+            <li>
+              ANY OTHER DAMAGES ARISING OUT OF OR RELATED TO THESE TERMS OR YOUR
+              USE OF THE SERVICES,
+            </li>
+          </ul>
+          <p>
+            EVEN IF MICROPLAN STUDIO HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+            DAMAGES.
+          </p>
+          <p>
+            IN JURISDICTIONS THAT DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
+            LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, OUR LIABILITY IS
+            LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+          </p>
+          <p>
+            IN ALL CASES, MICROPLAN STUDIO'S TOTAL AGGREGATE LIABILITY TO YOU
+            FOR ANY CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS SHALL NOT
+            EXCEED THE GREATER OF: (A) THE TOTAL AMOUNT YOU PAID TO MICROPLAN
+            STUDIO IN THE 12 MONTHS PRECEDING THE CLAIM, OR (B) US $10.00.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 14 -->
+        <div class="section" id="s14">
+          <div class="section-header">
+            <div class="section-num">14</div>
+            <h2>Indemnification</h2>
+          </div>
+          <p>
+            You agree to defend, indemnify, and hold harmless MicroPlan Studio
+            and its owners, officers, contractors, and agents from and against
+            any claims, liabilities, damages, judgments, awards, losses, costs,
+            or expenses (including reasonable attorneys' fees) arising out of or
+            relating to:
+          </p>
+          <ul>
+            <li>Your violation of these Terms;</li>
+            <li>Your use or misuse of the Services or products;</li>
+            <li>
+              Your violation of any third-party rights, including intellectual
+              property rights; or
+            </li>
+            <li>Any content you submit to our Services.</li>
+          </ul>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 15 -->
+        <div class="section" id="s15">
+          <div class="section-header">
+            <div class="section-num">15</div>
+            <h2>Termination</h2>
+          </div>
+          <p>
+            MicroPlan Studio reserves the right to suspend or terminate your
+            access to the Services, with or without notice, at our sole
+            discretion, for any reason, including but not limited to breach of
+            these Terms.
+          </p>
+          <p>Upon termination:</p>
+          <ul>
+            <li>
+              All licenses granted to you under these Terms immediately cease;
+            </li>
+            <li>
+              Any outstanding payment obligations remain due and payable; and
+            </li>
+            <li>
+              Provisions that by their nature should survive termination
+              (including Sections 8, 12, 13, 14, 16, and 17) will survive.
+            </li>
+          </ul>
+          <p>
+            You may stop using our Services at any time. Termination of your
+            access does not entitle you to a refund except as provided in
+            Section 5.3.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 16 -->
+        <div class="section" id="s16">
+          <div class="section-header">
+            <div class="section-num">16</div>
+            <h2>Governing Law</h2>
+          </div>
+          <p>
+            These Terms shall be governed by and construed in accordance with
+            the laws of the
+            <strong>Commonwealth of Massachusetts, United States</strong>,
+            without regard to its conflict-of-law principles. To the extent that
+            any lawsuit or court proceeding is permitted under these Terms, you
+            and MicroPlan Studio agree to submit to the exclusive personal
+            jurisdiction of the state and federal courts located in
+            Massachusetts.
+          </p>
+          <p>
+            If you are a consumer resident in the European Union, United
+            Kingdom, or another jurisdiction that grants non-waivable consumer
+            rights, nothing in this section limits those rights.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 17 -->
+        <div class="section" id="s17">
+          <div class="section-header">
+            <div class="section-num">17</div>
+            <h2>Dispute Resolution</h2>
+          </div>
+          <div class="callout-blue">
+            We encourage you to contact us first — most issues can be resolved
+            quickly and informally.
+          </div>
+
+          <h3>17.1 Informal Resolution</h3>
+          <p>
+            Before initiating any formal proceeding, you agree to contact
+            MicroPlan Studio at the address in Section 20 and give us at least
+            <strong>30 days</strong> to attempt to resolve the dispute
+            informally.
+          </p>
+
+          <h3>17.2 Binding Arbitration</h3>
+          <p>
+            If informal resolution fails, any dispute, claim, or controversy
+            arising out of or relating to these Terms or the Services shall be
+            resolved by
+            <strong>binding individual arbitration</strong> administered by a
+            mutually agreed-upon arbitration provider under its applicable
+            consumer or commercial rules. The arbitration will be conducted in
+            English and, unless otherwise agreed, will take place remotely.
+          </p>
+
+          <h3>17.3 Class Action Waiver</h3>
+          <p>
+            YOU AND MICROPLAN STUDIO EACH AGREE THAT ANY DISPUTE RESOLUTION
+            PROCEEDING WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN
+            A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. If this waiver is
+            deemed unenforceable, then the arbitration clause in Section 17.2
+            shall be void.
+          </p>
+
+          <h3>17.4 Small Claims Exception</h3>
+          <p>
+            Either party may bring an individual claim in small claims court if
+            the claim qualifies and the case remains in that court.
+          </p>
+
+          <h3>17.5 EU/UK Consumer Rights</h3>
+          <p>
+            If you are an EU consumer, you may also submit a complaint through
+            the European Commission's Online Dispute Resolution platform
+            (ec.europa.eu/consumers/odr). UK consumers may contact their
+            relevant Alternative Dispute Resolution (ADR) body.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 18 -->
+        <div class="section" id="s18">
+          <div class="section-header">
+            <div class="section-num">18</div>
+            <h2>Modifications to Terms</h2>
+          </div>
+          <p>
+            We reserve the right to update or modify these Terms at any time at
+            our sole discretion. When we make material changes, we will:
+          </p>
+          <ul>
+            <li>
+              Update the "<strong>Last updated</strong>" date at the top of this
+              page;
+            </li>
+            <li>Post a notice on our website; and/or</li>
+            <li>
+              Notify registered users or subscribers by email, where
+              appropriate.
+            </li>
+          </ul>
+          <p>
+            Your continued use of the Services after the revised Terms become
+            effective constitutes your acceptance of the changes. If you do not
+            agree with the modified Terms, you must stop using our Services.
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 19 -->
+        <div class="section" id="s19">
+          <div class="section-header">
+            <div class="section-num">19</div>
+            <h2>General Provisions</h2>
+          </div>
+          <ul>
+            <li>
+              <strong>Entire Agreement:</strong> These Terms, together with our
+              Privacy Policy and any product-specific license terms, constitute
+              the entire agreement between you and MicroPlan Studio regarding
+              your use of the Services and supersede all prior agreements.
+            </li>
+            <li>
+              <strong>Severability:</strong> If any provision of these Terms is
+              found invalid or unenforceable by a court of competent
+              jurisdiction, that provision will be modified to the minimum
+              extent necessary to make it enforceable, and the remaining
+              provisions will continue in full force and effect.
+            </li>
+            <li>
+              <strong>No Waiver:</strong> Our failure to enforce any right or
+              provision of these Terms will not constitute a waiver of that
+              right or provision.
+            </li>
+            <li>
+              <strong>No Assignment:</strong> You may not assign or transfer
+              your rights or obligations under these Terms without our prior
+              written consent. MicroPlan Studio may freely assign these Terms in
+              connection with a business transfer or restructuring.
+            </li>
+            <li>
+              <strong>Force Majeure:</strong> MicroPlan Studio will not be
+              liable for any failure or delay caused by events outside our
+              reasonable control, including natural disasters, acts of
+              government, internet or infrastructure outages, or pandemic
+              events.
+            </li>
+            <li>
+              <strong>Language:</strong> These Terms are written in English. Any
+              translations are provided for convenience only; the English
+              version shall control in the event of any conflict.
+            </li>
+            <li>
+              <strong>Electronic Communications:</strong> You agree to receive
+              communications from us electronically and acknowledge that all
+              agreements, notices, and disclosures provided electronically
+              satisfy any legal requirement that such communications be in
+              writing.
+            </li>
+          </ul>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- 20 -->
+        <div class="section" id="s20">
+          <div class="section-header">
+            <div class="section-num">20</div>
+            <h2>Contact</h2>
+          </div>
+          <p>
+            If you have any questions about these Terms or wish to exercise any
+            rights described herein, please contact us:
+          </p>
+          <div class="contact-card">
+            <p><strong>MicroPlan Studio</strong></p>
+            <p>
+              Email:
+              <a href="mailto:legal@microplanstudio.com"
+                >legal@microplanstudio.com</a
+              >
+            </p>
+            <p>
+              Website:
+              <a
+                href="https://microplanstudio.com"
+                target="_blank"
+                rel="noopener"
+                >microplanstudio.com</a
+              >
+            </p>
+            <p style="margin-top: 12px; font-size: 13px; color: #64748b">
+              We aim to respond to all legal inquiries within 5 business days.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+      <p>&copy; 2026 MicroPlan Studio. All rights reserved.</p>
+      <p style="margin-top: 6px">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        &nbsp;·&nbsp;
+        <a href="terms-of-service.html">Terms of Service</a>
+      </p>
+      <p style="margin-top: 10px; font-size: 12px; color: #94a3b8">
+        This document is for informational purposes only and does not constitute
+        legal advice. Consult a qualified attorney for advice specific to your
+        situation.
+      </p>
+    </footer>
+  </body>
+</html>

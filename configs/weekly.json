@@ -1,0 +1,23 @@
+{
+  "name": "Weekly Planner",
+  "subdomain": "weekly",
+  "repofolder": "weekly-planner-generator",
+  "category": "productivity",
+
+  "title": "Weekly Planner Generator",
+  "tagline": "Plan your week with goals, tasks, and priorities.",
+  "description": "Generate a printable weekly planner PDF with goals, tasks, and priorities.",
+  "og_description": "Create a simple, printable weekly planner PDF in seconds.",
+
+  "intro": "Take control of your entire week with a strategic plan that aligns daily actions with bigger goals. This free weekly planner generator creates a printable planner that shows your week at a glance, with space for goals, tasks, priorities, and daily schedules. Most people live day-to-day without connecting their work to broader objectives—missing opportunities for progress. This generator lets you define weekly goals, break them into daily tasks, and stay accountable. Customize columns for Monday through Sunday, add time blocks, notes, and habit tracking. Print it out, post it on your desk, or share it with your team. A weekly plan transforms random activity into intentional progress.",
+
+  "seo": {
+    "p1": "This free weekly planner generator helps you organize goals, tasks, and priorities for the week.",
+    "p2": "Ideal for productivity, school, and work planning. No signup required."
+  },
+
+  "related": ["daily", "monthly", "timeblock", "weeklyreview"],
+  "cross": ["fitness", "reading"],
+
+  "generator_ui_template": "weekly-ui.html"
+}

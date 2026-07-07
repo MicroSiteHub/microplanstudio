@@ -1,0 +1,23 @@
+{
+  "name": "Cleaning Schedule",
+  "subdomain": "cleaning",
+  "repofolder": "cleaning-schedule-generator",
+  "category": "home",
+
+  "title": "Cleaning Schedule Generator",
+  "tagline": "Create a weekly or monthly cleaning plan.",
+  "description": "Generate a printable cleaning schedule PDF for home organization.",
+  "og_description": "Create a simple, printable cleaning schedule PDF in seconds.",
+
+  "intro": "A clean home requires a system, and this free cleaning schedule generator turns chaos into clarity. Whether you're managing a weekly deep clean, monthly deep clean, or seasonal projects, this tool helps you break cleaning into manageable tasks and assign them to days. Without a plan, cleaning often gets neglected, leading to overwhelming clutter and allergen buildup. This generator creates a printable cleaning schedule customized to your needs and home size. Assign rooms, frequency levels, and tasks, then print for the whole family to see. Finally, cleaning becomes predictable, everyone knows their responsibilities, and your home stays consistently clean.",
+
+  "seo": {
+    "p1": "This free cleaning schedule generator helps you organize home cleaning tasks.",
+    "p2": "Ideal for weekly, monthly, or seasonal cleaning routines."
+  },
+
+  "related": ["chores", "homemaintenance", "meals", "budget"],
+  "cross": ["weekly", "water"],
+
+  "generator_ui_template": "cleaning-ui.html"
+}

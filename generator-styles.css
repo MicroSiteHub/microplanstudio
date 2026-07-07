@@ -1,0 +1,304 @@
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.logo {
+  height: 40px;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.controls {
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#previewArea {
+  display: block;
+  width: 8.5in;
+  height: 11in;
+  padding: 0px;
+  background: white;
+  border: 1px solid #ddd;
+  min-height: 600px;
+}
+
+button {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px 20px 4px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.legal-links {
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  color: #666;
+}
+
+.legal-links a {
+  color: #4a6fa5;
+}
+
+.planner-page {
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in;
+  background: white;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.planner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.planner-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.date-box {
+  font-size: 16px;
+}
+
+.planner-row {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.planner-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.priority-list,
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.priority-list li,
+.task-list li {
+  border-bottom: 1px solid #ccc;
+  height: 22px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #666;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.schedule-table .header {
+  width: 60px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.schedule-table .time {
+  width: 60px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.schedule-table .slot {
+  border: 1px solid #ccc;
+  height: 24px;
+}
+
+.schedule-name-cell {
+  border: 1px solid #ccc;
+  width: 140px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.schedule-day-cell {
+  border: 1px solid #ccc;
+  width: 20px;
+  height: 20px;
+  text-align: center; /* horizontal centering */
+  vertical-align: middle; /* vertical centering */
+}
+
+.schedule-checkbox {
+  border: 1px solid #666;
+  width: 12px;
+  height: 12px;
+  display: inline-block; /* works with text-align: center */
+  margin-top: 4px; /* adjust as needed for vertical centering */
+}
+
+.notes-box {
+  border: 1px solid #ccc;
+  height: 180px;
+}
+
+.related-tools {
+  margin-top: 40px;
+  padding: 20px;
+  background: #eef4ff;
+  border: 1px solid #cdddfc;
+  border-radius: 6px;
+}
+
+.related-tools h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.related-tools a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.related-tools a:hover {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.related-grid a {
+  color: #4a6fa5;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.related-grid a:hover {
+  text-decoration: underline;
+}
+
+.upsell-banner {
+  background: #eef4ff;
+  border: 1px solid #cdddfc;
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.upsell-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.upsell-inner span {
+  line-height: 1.4;
+}
+
+.upsell-logo {
+  width: 100px; /* adjust to taste */
+  height: auto;
+  display: block;
+}
+
+.upsell-banner a {
+  color: #4f46e5; /* indigo-600 */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.upsell-banner a:hover {
+  text-decoration: underline;
+}
+
+.seo-text {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.seo-text h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.seo-text p {
+  margin: 12px 0;
+  font-size: 16px;
+}

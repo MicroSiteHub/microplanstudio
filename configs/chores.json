@@ -1,0 +1,23 @@
+{
+  "name": "Chore Chart",
+  "subdomain": "chores",
+  "repofolder": "chore-chart-generator",
+  "category": "home",
+
+  "title": "Chore Chart Generator",
+  "tagline": "Organize household chores with a clean printable chart.",
+  "description": "Generate a printable chore chart PDF for families, kids, or shared homes.",
+  "og_description": "Create a simple, printable chore chart PDF in seconds.",
+
+  "intro": "Assign household responsibilities fairly and build accountability with this free chore chart generator. Families, roommates, and co-habiting adults struggle when chore expectations are unclear—leading to resentment and mess. This tool creates a clear, printable chore chart that shows who does what and when. Customize assignments by person, room, and frequency, then generate a chart perfect for posting on your fridge or shared wall. The visual structure makes responsibilities transparent, helps kids learn ownership, and ensures tasks get done. In minutes, you'll have a professional-looking chore chart that transforms household management from nagging to system-based accountability.",
+
+  "seo": {
+    "p1": "This free chore chart generator helps you organize household tasks clearly.",
+    "p2": "Perfect for families, kids, roommates, and home organization."
+  },
+
+  "related": ["cleaning", "homemaintenance", "budget", "meals"],
+  "cross": ["daily", "habits"],
+
+  "generator_ui_template": "chores-ui.html"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Water Tracker",
+  "subdomain": "water",
+  "repofolder": "water-tracker-generator",
+  "category": "wellness",
+
+  "title": "Water Tracker Generator",
+  "tagline": "Track daily water intake easily.",
+  "description": "Generate a printable water tracker PDF for daily hydration.",
+  "og_description": "Create a simple, printable water tracker PDF in seconds.",
+
+  "intro": "Dehydration impacts cognition, energy, and physical performance, yet most people drink too little water because they forget or lack accountability. This free water tracker generator creates a printable tracker that visually represents daily hydration goals through cups or ounces. Seeing a fillable tracker motivates people to drink more—it's simple, visual, and satisfying to complete. Whether you're improving energy, supporting fitness, or enhancing skin health, consistent hydration is foundational. Define your daily goal (usually 8-10 cups), print your tracker, and check off each cup as you drink. Post it on your fridge or keep it at your desk as a daily reminder. Many people discover they feel significantly better, sleep better, and have clearer skin when they prioritize hydration. Start with a tracker, build the habit, and transform your health one cup at a time.",
+
+  "seo": {
+    "p1": "This free water tracker generator helps you track daily hydration goals.",
+    "p2": "Ideal for wellness, fitness, and healthy habits."
+  },
+
+  "related": ["habits", "fitness", "sleep", "mood"],
+  "cross": ["daily", "cleaning"],
+
+  "generator_ui_template": "water-ui.html"
+}

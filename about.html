@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About MicroPlan Studio</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --brand: #6366f1;
+        --brand-light: #eef2ff;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --white: #ffffff;
+        --radius: 8px;
+        --max-w: 780px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      /* ── Header ── */
+      header {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 0 24px;
+      }
+      .header-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 18px 0;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .logo-mark {
+        width: 32px;
+        height: 32px;
+        background: var(--brand);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+      }
+      .logo-text {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--text);
+      }
+      .nav-link {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+      .nav-link:hover {
+        color: var(--brand);
+      }
+
+      /* ── Hero banner ── */
+      .hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #fff;
+        padding: 64px 24px 56px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: clamp(28px, 6vw, 40px);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+      }
+      .hero p {
+        font-size: 16px;
+        opacity: 0.8;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      /* ── Main content ── */
+      .content {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        padding: 60px 24px;
+      }
+
+      .content h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 16px;
+        margin-top: 36px;
+      }
+
+      .content h2:first-of-type {
+        margin-top: 0;
+      }
+
+      .content p {
+        margin-bottom: 18px;
+        color: var(--text);
+      }
+
+      .mission {
+        background: var(--brand-light);
+        border-left: 4px solid var(--brand);
+        padding: 20px;
+        border-radius: var(--radius);
+        margin: 28px 0;
+      }
+
+      .mission p {
+        margin: 0;
+        font-weight: 500;
+        color: var(--brand);
+      }
+
+      /* ── Footer ── */
+      footer {
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        padding: 24px;
+        text-align: center;
+        margin-top: 60px;
+      }
+      .footer-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+      }
+      .footer-link {
+        color: var(--brand);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        transition: opacity 0.2s ease;
+      }
+      .footer-link:hover {
+        opacity: 0.7;
+      }
+      .divider {
+        color: var(--border);
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <div class="logo-mark">M</div>
+          <span class="logo-text">MicroPlan Studio</span>
+        </a>
+        <a href="/" class="nav-link">← Back to Home</a>
+      </div>
+    </header>
+
+    <div class="hero">
+      <h1>About MicroPlan Studio</h1>
+      <p>Simple tools to help you plan, organize, and accomplish more.</p>
+    </div>
+
+    <div class="content">
+      <h2>Our Mission</h2>
+      <div class="mission">
+        <p>
+          To provide simple, free, and privacy-friendly planning tools that help
+          anyone structure their day, goals, health, and home—without
+          complexity, subscriptions, or tracking.
+        </p>
+      </div>
+
+      <h2>What We Do</h2>
+      <p>
+        MicroPlan Studio builds lightweight, focused micro-tools designed around
+        a single principle: <strong>planning should be simple.</strong>
+      </p>
+      <p>
+        Our generator tools help you create beautiful, printable planners in
+        seconds. Whether you're planning your daily schedule, tracking habits,
+        budgeting, organizing your home, or pursuing fitness goals—each tool is
+        designed to be straightforward and distraction-free.
+      </p>
+
+      <h2>Our Approach</h2>
+      <p>
+        We believe that effective planning doesn't require complexity. Each tool
+        focuses on one clear task: let you customize your planner and download
+        it as a clean PDF. No login. No app. No tracking. Just you, your plan,
+        and the ability to print it and get to work.
+      </p>
+
+      <h2>Free, Simple, Privacy-Friendly</h2>
+      <p>
+        All MicroPlan Studio tools are completely free to use. We don't track
+        personal data, require subscriptions, or sell user information. The
+        tools run entirely in your browser, and your information never leaves
+        your device.
+      </p>
+
+      <h2>Categories</h2>
+      <p>Our growing collection of generators spans five main categories:</p>
+      <ul style="margin-left: 20px; margin-bottom: 18px; color: var(--text)">
+        <li style="margin-bottom: 8px">
+          <strong>Productivity:</strong> Daily, weekly, and monthly planners,
+          time blocking, project planning, and goal setting.
+        </li>
+        <li style="margin-bottom: 8px">
+          <strong>Home:</strong> Budget tracking, chore charts, cleaning
+          schedules, and maintenance logs.
+        </li>
+        <li style="margin-bottom: 8px">
+          <strong>Learning:</strong> Study planners and reading logs to track
+          your educational progress.
+        </li>
+        <li style="margin-bottom: 8px">
+          <strong>Wellness:</strong> Habit trackers, fitness planners, mood
+          journals, sleep logs, water intake trackers, and gratitude journals.
+        </li>
+        <li>
+          <strong>Specialized:</strong> Travel planning, finance tracking, and
+          mindfulness tools.
+        </li>
+      </ul>
+
+      <h2>Get Started</h2>
+      <p>
+        Explore our collection of planning tools at the main site. Choose a
+        tool, customize your planner, and download. That's it.
+      </p>
+
+      <h2>Premium Planners</h2>
+      <p>
+        For premium, fully designed planner templates, visit
+        <a
+          href="https://www.etsy.com/shop/SystemCraftAIStudio"
+          target="_blank"
+          style="color: var(--brand); font-weight: 600; text-decoration: none"
+        >
+          SystemCraft AI Studio</a
+        >. MicroPlan Studio focuses on free generators, while SystemCraft offers
+        polished, customizable planners for specific planning styles and use
+        cases.
+      </p>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <a href="/" class="footer-link">Home</a>
+        <span class="divider">•</span>
+        <a href="/about.html" class="footer-link">About</a>
+        <span class="divider">•</span>
+        <a href="/contact.html" class="footer-link">Contact</a>
+        <span class="divider">•</span>
+        <a href="/privacy-policy.html" class="footer-link">Privacy</a>
+        <span class="divider">•</span>
+        <a href="/terms-of-service.html" class="footer-link">Terms</a>
+        <p style="margin-top: 16px; font-size: 13px; color: var(--muted)">
+          © 2026 MicroPlan Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
