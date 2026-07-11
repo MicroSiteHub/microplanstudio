@@ -11,23 +11,20 @@
       content="MicroPlan Studio offers free printable planner generators for daily planning, habits, fitness, budgeting, home, school, and wellness."
     />
 
-    <!-- Fonts / Tailwind (kept similar to your current setup) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="common.css" />
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-    <!-- AdSense (same client ID as current page) -->
+    <!-- AdSense -->
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5861292512968172"
       crossorigin="anonymous"
     ></script>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-P54QP62CXN"
@@ -87,66 +84,216 @@
       }
     </script>
 
-    <style>
-      :root {
-        --navy: #0f172a;
-        --indigo: #6366f1;
-        --indigo-dark: #4f46e5;
-        --indigo-light: #818cf8;
-        --slate-text: #64748b;
-      }
+    <link rel="stylesheet" href="generator-styles.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    <!-- Cloudflare Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "8633d47eb3dc4e5fa2180aa020f47c52"}'
+    ></script>
+    <!-- Generated Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "MicroPlan Studio",
+        "url": "https://microplanstudio.com",
+        "description": "Free printable planner generators for productivity, home, learning, and wellness.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Budget Planner",
+            "description": "Generate a printable budget planner PDF for monthly finances.",
+            "category": "Home",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Chore Chart",
+            "description": "Generate a printable chore chart PDF for families, kids, or shared homes.",
+            "category": "Home",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Cleaning Schedule",
+            "description": "Generate a printable cleaning schedule PDF for home organization.",
+            "category": "Home",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Home Maintenance Log",
+            "description": "Generate a printable home maintenance log PDF for repairs and upkeep.",
+            "category": "Home",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Meal Planner",
+            "description": "Generate a printable meal planner PDF for weekly food planning.",
+            "category": "Home",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Daily Planner",
+            "description": "Generate a clean, printable daily planner PDF with schedule blocks, priorities, and tasks.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Goals Planner",
+            "description": "Generate a printable goals planner PDF with milestones and progress tracking.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Monthly Planner",
+            "description": "Generate a printable monthly planner PDF with goals, events, and priorities.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Project Planner",
+            "description": "Generate a printable project planner PDF with tasks, milestones, and goals.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Time Block Planner",
+            "description": "Generate a printable time block planner PDF for focused scheduling.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "To-Do List",
+            "description": "Generate a printable to-do list PDF with tasks, priorities, and notes.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Weekly Planner",
+            "description": "Generate a printable weekly planner PDF with goals, tasks, and priorities.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Weekly Review",
+            "description": "Generate a printable weekly review PDF with prompts and reflection sections.",
+            "category": "Productivity",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Reading Log",
+            "description": "Generate a printable reading log PDF for books and reading goals.",
+            "category": "Learning",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Study Planner",
+            "description": "Generate a printable study planner PDF for school or self-learning.",
+            "category": "Learning",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Fitness Planner",
+            "description": "Generate a clean, printable fitness planner PDF in seconds.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Gratitude Journal",
+            "description": "Generate a simple, printable gratitude journal PDF to reflect on the positive moments in your day.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Habit Tracker",
+            "description": "Generate a printable habit tracker PDF for daily and weekly habits.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Mood Tracker",
+            "description": "Generate a printable mood tracker PDF for daily emotional logs.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Sleep Tracker",
+            "description": "Generate a printable sleep tracker PDF for nightly sleep logs.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Water Tracker",
+            "description": "Generate a printable water tracker PDF for daily hydration.",
+            "category": "Wellness",
+            "priceCurrency": "USD",
+            "price": "0",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
       }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      .hero-glow {
-        background: radial-gradient(
-          ellipse 60% 50% at 50% 40%,
-          rgba(99, 102, 241, 0.18) 0%,
-          transparent 70%
-        );
-      }
-
-      .card-hover {
-        transition: all 0.2s ease;
-      }
-      .card-hover:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
-      }
-
-      .nav-link {
-        position: relative;
-        transition: color 0.2s ease;
-      }
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--indigo);
-        border-radius: 1px;
-        transition: width 0.2s ease;
-      }
-      .nav-link:hover::after {
-        width: 100%;
-      }
-    </style>
+    </script>
   </head>
 
   <body class="bg-white text-slate-800">
@@ -157,18 +304,30 @@
       <div
         class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16"
       >
-        <a href="#" class="flex items-center gap-2.5 shrink-0">
-          <div
-            class="w-8 h-8 rounded-lg bg-indigo flex items-center justify-center"
-          >
-            <span class="text-white font-bold text-sm leading-none">M</span>
+        <a href="#" class="logo">
+          <div class="logo-mark">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon"
+            >
+              <path
+                d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 3.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0z"
+              />
+            </svg>
           </div>
-          <span class="text-navy font-bold text-lg tracking-tight"
-            >MicroPlan Studio</span
-          >
+          <span class="logo-text">MicroPlan <span>Studio</span></span>
         </a>
 
-        <div class="hidden md:flex items-center gap-6">
+        <span
+          id="headerPageTitle"
+          class="hidden text-base md:text-lg font-bold text-slate-700 md:inline"
+          style="margin-left: 2rem; opacity: 0; transition: opacity 0.3s"
+        >
+          Plan Less. Accomplish More.
+        </span>
+
+        <div class="nav-container md:flex">
           <a
             href="#tools"
             class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
@@ -176,818 +335,929 @@
             Tools
           </a>
           <a
-            href="/all-tools.html"
-            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
-          >
-            All Tools
-          </a>
-          <a
-            href="#about"
+            href="about.html"
             class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
           >
             About
           </a>
           <a
-            href="#daily-planner"
-            class="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full inline-flex items-center gap-1.5"
+            href="contact.html"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
           >
-            Try Daily Planner
-            <i class="w-4 h-4" data-lucide="arrow-right"></i>
+            Contact
           </a>
         </div>
       </div>
     </nav>
 
     <main>
-      <!-- Hero -->
-      <section class="relative bg-[#0f172a] overflow-hidden">
-        <!-- Improved glow -->
-        <div
-          class="absolute inset-0 pointer-events-none"
-          style="
-            background: radial-gradient(
-              circle at 50% 38%,
-              rgba(99, 102, 241, 0.35) 0%,
-              rgba(99, 102, 241, 0.18) 28%,
-              transparent 70%
-            );
-          "
-        ></div>
-
-        <div
-          class="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24 text-center"
-        >
-          <h1
-            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight"
-          >
-            Plan Less.<br class="sm:hidden" />
-            Accomplish More.
-          </h1>
-
-          <p
-            class="mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed"
-          >
-            MicroPlan Studio builds focused micro-tools that help you structure
-            your day, week, goals, budget, home, school, and wellness—one small
-            plan at a time.
+      <!-- SEO Keywords (Hidden) -->
+      <div style="display: none" class="seo-keywords">
+        <section data-planner="budget">
+          <h2>Budget Planner</h2>
+          <p>Track expenses, income, and savings.</p>
+          <p>Generate a printable budget planner PDF for monthly finances.</p>
+          <p>Budget Planner Generator</p>
+          <p>
+            Gain control of your finances with this free budget planner
+            generator. Whether you're managing household expenses, planning for
+            savings, or tracking income from multiple sources, this tool helps
+            you visualize where your money goes each month. Many people struggle
+            with overspending because they lack a clear picture of their
+            financial habits. This generator creates a customizable, printable
+            budget template in seconds. Simply enter your income, list your
+            expenses, and watch the totals calculate aut
           </p>
+        </section>
+        <section data-planner="chores">
+          <h2>Chore Chart</h2>
+          <p>Organize household chores with a clean printable chart.</p>
+          <p>
+            Generate a printable chore chart PDF for families, kids, or shared
+            homes.
+          </p>
+          <p>Chore Chart Generator</p>
+          <p>
+            Assign household responsibilities fairly and build accountability
+            with this free chore chart generator. Families, roommates, and
+            co-habiting adults struggle when chore expectations are
+            unclear—leading to resentment and mess. This tool creates a clear,
+            printable chore chart that shows who does what and when. Customize
+            assignments by person, room, and frequency, then generate a chart
+            perfect for posting on your fridge or shared wall. The visual
+            structure makes responsibilities transparent, helps
+          </p>
+        </section>
+        <section data-planner="cleaning">
+          <h2>Cleaning Schedule</h2>
+          <p>Create a weekly or monthly cleaning plan.</p>
+          <p>
+            Generate a printable cleaning schedule PDF for home organization.
+          </p>
+          <p>Cleaning Schedule Generator</p>
+          <p>
+            A clean home requires a system, and this free cleaning schedule
+            generator turns chaos into clarity. Whether you're managing a weekly
+            deep clean, monthly deep clean, or seasonal projects, this tool
+            helps you break cleaning into manageable tasks and assign them to
+            days. Without a plan, cleaning often gets neglected, leading to
+            overwhelming clutter and allergen buildup. This generator creates a
+            printable cleaning schedule customized to your needs and home size.
+            Assign rooms, frequency levels, and t
+          </p>
+        </section>
+        <section data-planner="homemaintenance">
+          <h2>Home Maintenance Log</h2>
+          <p>Track repairs, inspections, and home upkeep.</p>
+          <p>
+            Generate a printable home maintenance log PDF for repairs and
+            upkeep.
+          </p>
+          <p>Home Maintenance Log Generator</p>
+          <p>
+            Home maintenance records protect your investment and keep your
+            property in top condition. This free home maintenance log generator
+            creates a customizable log for tracking repairs, inspections,
+            service dates, and costs. Whether you're a homeowner, renter, or
+            property manager, maintaining records helps prove that upkeep has
+            occurred, supports insurance claims, increases resale value, and
+            prevents costly emergency repairs. Log HVAC services, plumbing work,
+            roof inspections, or appliance repairs—a
+          </p>
+        </section>
+        <section data-planner="meals">
+          <h2>Meal Planner</h2>
+          <p>Plan meals for the week with ease.</p>
+          <p>Generate a printable meal planner PDF for weekly food planning.</p>
+          <p>Meal Planner Generator</p>
+          <p>
+            Planning meals ahead reduces stress, saves money, and keeps your
+            family eating healthy. This free meal planner generator creates a
+            customizable weekly meal plan and grocery list in seconds. Whether
+            you're feeding a family, meal-prepping for the week, or managing
+            dietary restrictions, having a visual plan transforms meal
+            preparation from chaotic to organized. Simply define your meals, add
+            ingredients to track, and generate a printable planner. Share it
+            with your family, post it on the fridge, or
+          </p>
+        </section>
+        <section data-planner="daily">
+          <h2>Daily Planner</h2>
+          <p>Plan your day with priorities, schedule blocks, and tasks.</p>
+          <p>
+            Generate a clean, printable daily planner PDF with schedule blocks,
+            priorities, and tasks.
+          </p>
+          <p>Daily Planner Generator</p>
+          <p>
+            Start each day with intention instead of reactivity. This free daily
+            planner generator creates a customizable, printable daily schedule
+            that helps you prioritize, time-block, and execute. Whether you're
+            managing work projects, household responsibilities, or personal
+            goals, a structured plan keeps you focused and reduces decision
+            fatigue. Without a plan, your day is controlled by emails,
+            interruptions, and urgency rather than your priorities. This
+            generator lets you add priorities, time blocks, t
+          </p>
+        </section>
+        <section data-planner="goals">
+          <h2>Goals Planner</h2>
+          <p>Set and track your goals with clarity.</p>
+          <p>
+            Generate a printable goals planner PDF with milestones and progress
+            tracking.
+          </p>
+          <p>Goals Planner Generator</p>
+          <p>
+            Turn vague aspirations into concrete plans that you actually
+            achieve. This free goals planner generator creates a printable
+            workbook that helps you define goals, break them into milestones,
+            and track progress. Without a written plan with milestones, most
+            goals remain wishes—vague intentions that get forgotten amid daily
+            chaos. This tool guides you through goal-setting with SMART
+            principles, helps you visualize progress, and keeps you accountable.
+            Define your goals, add quarterly milestones, tr
+          </p>
+        </section>
+        <section data-planner="monthly">
+          <h2>Monthly Planner</h2>
+          <p>Plan your month with goals, events, and priorities.</p>
+          <p>
+            Generate a printable monthly planner PDF with goals, events, and
+            priorities.
+          </p>
+          <p>Monthly Planner Generator</p>
+          <p>
+            Long-term success requires planning beyond the daily grind. This
+            free monthly planner generator creates a calendar view of your
+            entire month, showing goals, milestones, events, and priorities in
+            one visual space. Many people struggle because they focus only on
+            today's urgent tasks while ignoring monthly objectives, deadlines,
+            and milestones. This tool helps you zoom out and see patterns, track
+            progress toward bigger goals, and spot scheduling conflicts. Define
+            major goals, add key dates, schedul
+          </p>
+        </section>
+        <section data-planner="project">
+          <h2>Project Planner</h2>
+          <p>Plan projects with tasks, milestones, and goals.</p>
+          <p>
+            Generate a printable project planner PDF with tasks, milestones, and
+            goals.
+          </p>
+          <p>Project Planner Generator</p>
+          <p>
+            Complete projects on time by breaking them into clear tasks and
+            milestones. This free project planner generator creates a printable
+            project roadmap that tracks tasks, deadlines, milestones, and
+            progress. Projects fail when scope is unclear, tasks are
+            disorganized, or milestones aren't visible. This tool helps you
+            define project goals, list tasks with dependencies, set milestones,
+            and track completion status. Whether you're managing a work
+            initiative, school project, or personal goal, having ever
+          </p>
+        </section>
+        <section data-planner="timeblock">
+          <h2>Time Block Planner</h2>
+          <p>Organize your day with structured time blocks.</p>
+          <p>
+            Generate a printable time block planner PDF for focused scheduling.
+          </p>
+          <p>Time Block Planner Generator</p>
+          <p>
+            Eliminate fragmentation and reclaim deep focus with time blocking.
+            This free time block planner generator creates a structured hourly
+            schedule that protects focused work time and prevents constant
+            context-switching. Knowledge workers waste hours jumping between
+            meetings, emails, and interruptions—losing the ability to do
+            meaningful work. Time blocking solves this by assigning specific
+            hours to specific activities: deep work, meetings, admin,
+            collaboration. This tool generates a customizable ho
+          </p>
+        </section>
+        <section data-planner="todo">
+          <h2>To-Do List</h2>
+          <p>Create a clean, printable task list.</p>
+          <p>
+            Generate a printable to-do list PDF with tasks, priorities, and
+            notes.
+          </p>
+          <p>To-Do List Generator</p>
+          <p>
+            Get everything out of your head and onto a list you can actually
+            manage. This free to-do list generator creates a printable task list
+            that helps you capture, prioritize, and execute. Mental clutter from
+            unwritten tasks drains focus and creates anxiety—your brain is busy
+            remembering instead of thinking strategically. A simple printed
+            to-do list offloads that burden, freeing mental energy for actual
+            work. This generator lets you quickly add tasks, prioritize them,
+            add notes, and generate a clean
+          </p>
+        </section>
+        <section data-planner="weekly">
+          <h2>Weekly Planner</h2>
+          <p>Plan your week with goals, tasks, and priorities.</p>
+          <p>
+            Generate a printable weekly planner PDF with goals, tasks, and
+            priorities.
+          </p>
+          <p>Weekly Planner Generator</p>
+          <p>
+            Take control of your entire week with a strategic plan that aligns
+            daily actions with bigger goals. This free weekly planner generator
+            creates a printable planner that shows your week at a glance, with
+            space for goals, tasks, priorities, and daily schedules. Most people
+            live day-to-day without connecting their work to broader
+            objectives—missing opportunities for progress. This generator lets
+            you define weekly goals, break them into daily tasks, and stay
+            accountable. Customize columns for Monda
+          </p>
+        </section>
+        <section data-planner="weeklyreview">
+          <h2>Weekly Review</h2>
+          <p>Reflect on your week and plan ahead.</p>
+          <p>
+            Generate a printable weekly review PDF with prompts and reflection
+            sections.
+          </p>
+          <p>Weekly Review Generator</p>
+          <p>
+            Reflection transforms experience into growth. This free weekly
+            review generator creates a guided workbook that prompts you to
+            review the week, celebrate wins, acknowledge challenges, and plan
+            next week. Most people move from week to week without
+            pausing—missing lessons, repeating mistakes, and losing momentum. A
+            structured review session changes that by building self-awareness
+            and intentionality. This tool provides prompts for achievements,
+            learnings, obstacles, priorities, and next-week goals
+          </p>
+        </section>
+        <section data-planner="reading">
+          <h2>Reading Log</h2>
+          <p>Track books, pages, and reading progress.</p>
+          <p>
+            Generate a printable reading log PDF for books and reading goals.
+          </p>
+          <p>Reading Log Generator</p>
+          <p>
+            Reading is transformative, but many readers never finish books
+            because they lose track of progress and context. This free reading
+            log generator creates a printable tracker that records every book
+            you read, captures key takeaways, and builds accountability for your
+            reading goals. Whether you're a student, book lover, or professional
+            seeking growth, logging your reading motivates completion and
+            preserves lessons. Track book title, author, pages read, completion
+            date, and personal notes or quotes.
+          </p>
+        </section>
+        <section data-planner="study">
+          <h2>Study Planner</h2>
+          <p>Plan study sessions and track progress.</p>
+          <p>
+            Generate a printable study planner PDF for school or self-learning.
+          </p>
+          <p>Study Planner Generator</p>
+          <p>
+            Effective studying requires a plan, not just time. This free study
+            planner generator creates a printable study schedule that breaks
+            subjects into manageable sessions, tracks topics covered, and builds
+            exam readiness. Students often struggle because they study
+            inefficiently—cramming without strategy instead of spacing learning
+            over time. This tool helps you plan study sessions by subject, set
+            realistic daily goals, track completion, and visualize progress
+            toward exams. Whether you're preparing
+          </p>
+        </section>
+        <section data-planner="fitness">
+          <h2>Fitness Planner</h2>
+          <p>Track workouts, cardio, habits, and progress.</p>
+          <p>Generate a clean, printable fitness planner PDF in seconds.</p>
+          <p>Fitness Planner Generator</p>
+          <p>
+            Fitness consistency beats intensity every time, but most people quit
+            because they lack motivation and tracking. This free fitness planner
+            generator creates a printable workout log that tracks exercises,
+            sets, reps, cardio sessions, and body metrics over time. Seeing
+            visual progress builds momentum and keeps you motivated through
+            plateaus. Whether you're starting a gym routine, training at home,
+            or optimizing performance, logging workouts ensures accountability
+            and prevents skipped sessions. Trac
+          </p>
+        </section>
+        <section data-planner="gratitude">
+          <h2>Gratitude Journal</h2>
+          <p>Create a calming, printable gratitude journal page in seconds.</p>
+          <p>
+            Generate a simple, printable gratitude journal PDF to reflect on the
+            positive moments in your day.
+          </p>
+          <p>Gratitude Journal Generator</p>
+          <p>
+            Gratitude practice fundamentally rewires your brain toward happiness
+            and resilience, yet most people practice it sporadically if at all.
+            This free gratitude journal generator creates a printable journal
+            that guides you to capture what you're grateful for, who you
+            appreciate, and why. Regular gratitude journaling reduces stress,
+            increases contentment, and shifts focus from scarcity to abundance.
+            Whether you're managing depression, seeking mindfulness, or simply
+            wanting more joy, a daily gratitude
+          </p>
+        </section>
+        <section data-planner="habits">
+          <h2>Habit Tracker</h2>
+          <p>Track habits and build consistency.</p>
+          <p>
+            Generate a printable habit tracker PDF for daily and weekly habits.
+          </p>
+          <p>Habit Tracker Generator</p>
+          <p>
+            Tiny habits compound into transformation, but most people fail at
+            habit building because they lack visibility into their progress.
+            This free habit tracker generator creates a printable grid that
+            makes building habits simple: define your habits, track daily or
+            weekly, and watch your consistency streak grow. Behavioral science
+            shows that visible progress motivates continued effort—even on hard
+            days. Whether you're building exercise, meditation, reading, or
+            wellness habits, a printed tracker keep
+          </p>
+        </section>
+        <section data-planner="mood">
+          <h2>Mood Tracker</h2>
+          <p>Track your mood and emotional patterns.</p>
+          <p>Generate a printable mood tracker PDF for daily emotional logs.</p>
+          <p>Mood Tracker Generator</p>
+          <p>
+            Emotional awareness is the foundation of mental health, yet most
+            people never track or examine their mood patterns. This free mood
+            tracker generator creates a printable log where you record daily
+            moods, note triggering events, and discover what influences your
+            wellbeing. Over time, patterns emerge: certain activities lift your
+            mood, specific stressors drain you, and tracking itself builds
+            self-awareness. Whether you're managing anxiety, depression, or
+            simply optimizing happiness, a mood journal
+          </p>
+        </section>
+        <section data-planner="sleep">
+          <h2>Sleep Tracker</h2>
+          <p>Track sleep quality and patterns.</p>
+          <p>Generate a printable sleep tracker PDF for nightly sleep logs.</p>
+          <p>Sleep Tracker Generator</p>
+          <p>
+            Sleep quality directly impacts health, mood, and productivity, yet
+            most people never measure or optimize their sleep. This free sleep
+            tracker generator creates a printable log that records sleep
+            duration, bedtime, wake time, quality ratings, and factors affecting
+            sleep. Tracking your sleep reveals patterns: which routines improve
+            rest, which habits disrupt it, and how sleep influences your day.
+            Whether you're recovering from insomnia, optimizing athletic
+            performance, or managing health condition
+          </p>
+        </section>
+        <section data-planner="water">
+          <h2>Water Tracker</h2>
+          <p>Track daily water intake easily.</p>
+          <p>Generate a printable water tracker PDF for daily hydration.</p>
+          <p>Water Tracker Generator</p>
+          <p>
+            Dehydration impacts cognition, energy, and physical performance, yet
+            most people drink too little water because they forget or lack
+            accountability. This free water tracker generator creates a
+            printable tracker that visually represents daily hydration goals
+            through cups or ounces. Seeing a fillable tracker motivates people
+            to drink more—it's simple, visual, and satisfying to complete.
+            Whether you're improving energy, supporting fitness, or enhancing
+            skin health, consistent hydration is foundati
+          </p>
+        </section>
+      </div>
 
+      <!-- Hero / Intro Section -->
+      <section class="hero">
+        <h1 class="text-white">
+          Plan Less.<br class="sm:hidden" />
+          Accomplish More.
+        </h1>
+
+        <p class="mt-6 md:mt-8">
+          MicroPlan Studio offers a complete collection of free, no-signup
+          planner generators. Each tool is designed for a single planning need,
+          all presented here in one place. MicroPlan Studio is your toolkit for
+          building your perfect planner. Generate printable PDFs for daily
+          planning, budgeting, fitness tracking, home management, learning, and
+          wellness. No signup, no ads, no tracking. Built for people who work
+          best with pen, paper, and intention. Start planning today.
+        </p>
+
+        <div class="flex justify-center mt-8">
+          <a
+            href="#tools"
+            class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3.5 rounded-full inline-flex items-center justify-center gap-2 text-base transition-colors"
+          >
+            Choose Your Planner
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Upsell Banner #1 -->
+      <section class="bg-white py-1 px-5 md:px-1">
+        <div class="upsell-banner max-w-4xl mx-auto">
           <div
-            class="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            class="flex items-center gap-4 justify-center flex-col sm:flex-row"
           >
-            <a
-              href="#daily-planner"
-              class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3.5 rounded-full inline-flex items-center justify-center gap-2 text-base"
-            >
-              Try the Daily Planner
-              <i class="w-4 h-4" data-lucide="arrow-right"></i>
-            </a>
-
-            <a
-              href="#tools"
-              class="border border-slate-300 text-white/90 px-7 py-3.5 rounded-full inline-flex items-center justify-center gap-2 text-base"
-            >
-              Browse all tools
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured: Daily Planner -->
-      <section id="daily-planner" class="bg-slate-50 py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-5 md:px-8">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
-          >
-            <div class="order-2 lg:order-1">
-              <span
-                class="inline-block text-xs font-bold text-indigo bg-indigo/10 px-3 py-1.5 rounded-full mb-5"
-              >
-                Featured Tool
-              </span>
-              <h2
-                class="text-3xl md:text-4xl font-bold text-navy leading-tight mb-4"
-              >
-                Daily Planner Generator
-              </h2>
-              <p class="text-base text-slate-600 leading-relaxed mb-6 max-w-xl">
-                Generate a beautiful, printable daily planner in seconds.
-                Customize your time blocks, priorities, and schedule, then
-                download as a clean PDF.
-              </p>
-              <a
-                href="https://daily.microplanstudio.com"
-                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-indigo text-white font-semibold text-sm"
-              >
-                Open Daily Planner
-                <i class="w-4 h-4" data-lucide="arrow-right"></i>
-              </a>
-            </div>
-
-            <div class="order-1 lg:order-2 flex justify-center">
-              <div
-                class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 p-4 md:p-6 border border-slate-100"
-              >
-                <img
-                  src="DailyPlannerPreview.png"
-                  alt="Daily Planner Preview"
-                  class="rounded-xl shadow-lg border border-slate-200"
-                  style="width: 340px; max-width: 100%; height: auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tools grid -->
-      <section id="tools" class="bg-white py-20 md:py-28">
-        <div class="max-w-7xl mx-auto px-5 md:px-8">
-          <div class="max-w-2xl mx-auto text-center mb-10 md:mb-14">
-            <span
-              class="inline-block text-xs font-bold text-indigo bg-indigo/10 px-3 py-1.5 rounded-full mb-4"
-            >
-              Free planner tools
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3">
-              All MicroPlan Studio Generators
-            </h2>
-            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
-              Each tool focuses on a single planning need—daily, weekly, budget,
-              habits, home, school, and wellness. Click any generator to open it
-              in a new tab and create a printable PDF.
-            </p>
-          </div>
-
-          <!-- Categories -->
-          <div class="space-y-10">
-            <!-- Productivity -->
             <div>
-              <h3 class="text-lg font-semibold text-navy mb-4">
-                Productivity & Planning
-              </h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a
-                  href="https://daily.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Daily Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan your day with time blocks, priorities, and tasks.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    daily.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://weekly.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Weekly Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Map out your week with a clean, printable layout.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    weekly.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://monthly.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Monthly Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan your month with a simple calendar-style grid.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    monthly.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://timeblock.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Time Block Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Create focused time-block schedules for deep work.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    timeblock.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://todo.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      To-Do List Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Generate clean, printable task lists with priorities.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    todo.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://project.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Project Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Break projects into tasks, milestones, and deadlines.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    project.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://goals.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Goal Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Set goals, action steps, and timelines in a simple layout.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    goals.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://weeklyreview.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Weekly Review Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Reflect on wins, challenges, habits, and next-week goals.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    weeklyreview.microplanstudio.com
-                  </p>
-                </a>
-              </div>
-            </div>
-
-            <!-- Habits & Home -->
-            <div>
-              <h3 class="text-lg font-semibold text-navy mb-4">
-                Habits, Home & Life
-              </h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a
-                  href="https://habits.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Habit Tracker Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Track daily and weekly habits with a checkbox grid.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    habits.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://chores.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Chore Chart Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Create chore charts for kids, families, or roommates.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    chores.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://cleaning.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Cleaning Schedule Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan weekly or monthly cleaning tasks by room or zone.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    cleaning.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://homemaintenance.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Home Maintenance Log Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Track home maintenance tasks, dates, and notes.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    homemaintenance.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://budget.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Budget Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan income, expenses, and savings in a simple budget
-                      layout.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    budget.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://meals.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Meal Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan breakfasts, lunches, dinners, and snacks for the
-                      week.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    meals.microplanstudio.com
-                  </p>
-                </a>
-              </div>
-            </div>
-
-            <!-- School & Learning -->
-            <div>
-              <h3 class="text-lg font-semibold text-navy mb-4">
-                School, Study & Reading
-              </h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a
-                  href="https://study.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Study Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Organize subjects, assignments, and exam prep.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    study.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://reading.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Reading Log Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Track books, authors, dates, and ratings.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    reading.microplanstudio.com
-                  </p>
-                </a>
-              </div>
-            </div>
-
-            <!-- Wellness -->
-            <div>
-              <h3 class="text-lg font-semibold text-navy mb-4">
-                Health & Wellness
-              </h3>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a
-                  href="https://fitness.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Fitness Planner Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Plan workouts, sets, reps, and weekly fitness goals.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    fitness.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://water.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Water Tracker Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Track daily water intake across the week.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    water.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://sleep.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Sleep Tracker Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Log bedtime, wake time, hours slept, and sleep quality.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    sleep.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://mood.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Mood Tracker Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Track daily mood with a simple 5-point scale and notes.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    mood.microplanstudio.com
-                  </p>
-                </a>
-
-                <a
-                  href="https://gratitude.microplanstudio.com"
-                  class="card-hover bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col justify-between"
-                  target="_blank"
-                >
-                  <div>
-                    <p class="text-sm font-semibold text-navy">
-                      Gratitude Journal Generator
-                    </p>
-                    <p class="text-xs text-slate-600 mt-1">
-                      Create a calming, printable gratitude journal page to
-                      reflect on positive moments.
-                    </p>
-                  </div>
-                  <p class="mt-3 text-xs text-slate-500">
-                    gratitude.microplanstudio.com
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Mission Statement -->
-      <section class="bg-white py-12 md:py-16 border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <div class="text-center mb-8">
-            <p
-              class="text-sm font-bold text-indigo uppercase tracking-wide mb-2"
-            >
-              Our Mission
-            </p>
-            <h2 class="text-2xl md:text-3xl font-bold text-navy">
-              Planning should be simple, free, and private.
-            </h2>
-          </div>
-          <p
-            class="text-center text-sm md:text-base text-slate-600 leading-relaxed max-w-3xl mx-auto"
-          >
-            MicroPlan Studio provides no-signup planner generators designed for
-            real-world use. Create printable PDFs in seconds, customize to your
-            needs, and print—no tracking, no complexity, no cost.
-          </p>
-        </div>
-      </section>
-
-      <!-- What We Offer -->
-      <section class="bg-slate-50 py-16 md:py-20">
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-2 text-center">
-            What MicroPlan Studio Offers
-          </h2>
-          <p class="text-center text-slate-600 text-sm md:text-base mb-10">
-            Each tool is built for a single planning need.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">✓ Instant Generation</p>
-              <p class="text-sm text-slate-600">
-                Create beautiful, printable PDFs in seconds. No waiting, no
-                processing fees.
+              <p class="text-lg font-semibold mb-2">
+                Want Beautifully Designed Premium Planners?
               </p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">✓ No Account Required</p>
-              <p class="text-sm text-slate-600">
-                Use all tools without signup. Your planner is yours alone—no
-                cloud storage, no account tracking.
-              </p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">✓ Fully Customizable</p>
-              <p class="text-sm text-slate-600">
-                Adjust time slots, priorities, categories, and layout. Every
-                planner adapts to your workflow.
-              </p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">✓ Privacy-First Design</p>
-              <p class="text-sm text-slate-600">
-                All processing happens in your browser. No data is sent to any
-                server. Your information stays with you.
-              </p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">✓ Print-Ready Output</p>
-              <p class="text-sm text-slate-600">
-                PDFs are optimized for printing on standard paper. Clean
-                layouts, professional finish.
-              </p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-              <p class="font-semibold text-navy mb-2">
-                ✓ Continuously Improved
-              </p>
-              <p class="text-sm text-slate-600">
-                Tools are refined regularly based on user feedback and
-                real-world usage patterns.
+              <p class="text-sm opacity-90 mb-4">
+                Explore hand-crafted, customizable planner templates from
+                <a
+                  href="https://www.etsy.com/shop/SystemCraftAIStudio"
+                  target="_blank"
+                >
+                  SystemCraft AI Studio
+                </a>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Why Free -->
-      <section class="bg-white py-16 md:py-20">
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4 text-center">
-            Why These Tools Are Free
-          </h2>
-          <p
-            class="text-sm md:text-base text-slate-600 leading-relaxed mb-6 max-w-3xl mx-auto"
-          >
-            MicroPlan Studio is supported by unobtrusive advertising. We believe
-            planning tools should be accessible to everyone, regardless of
-            income. AdSense helps us maintain and develop these tools while
-            keeping them free.
-          </p>
-          <p
-            class="text-sm md:text-base text-slate-600 leading-relaxed max-w-3xl mx-auto"
-          >
-            We've chosen AdSense specifically because it aligns with our values:
-            respectful, non-tracking advertising that doesn't compromise your
-            privacy. No personal data is collected for advertising purposes.
-            Tools work the same way with or without ads enabled.
-          </p>
-        </div>
-      </section>
-
-      <!-- Privacy First -->
-      <section class="bg-slate-50 py-16 md:py-20">
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4 text-center">
-            Privacy First
-          </h2>
-          <div class="max-w-3xl mx-auto space-y-4">
-            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
-              <strong>Zero Data Collection:</strong> MicroPlan Studio does not
-              collect, store, or sell personal information. Your planners and
-              customizations exist only on your device.
-            </p>
-            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
-              <strong>Browser-Based Processing:</strong> All planner generation
-              happens in your browser. No data is sent to servers. Your
-              information never leaves your device.
-            </p>
-            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
-              <strong>Transparent Practices:</strong> See our
-              <a href="/privacy-policy.html" class="text-indigo font-semibold"
-                >Privacy Policy</a
-              >
-              for complete details on how we handle analytics and advertising.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works -->
-      <section class="bg-white py-16 md:py-20">
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <h2
-            class="text-2xl md:text-3xl font-bold text-navy mb-10 text-center"
-          >
-            How It Works
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div
-                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
-              >
-                1
-              </div>
-              <h3 class="font-semibold text-navy mb-2">Choose a Planner</h3>
-              <p class="text-sm text-slate-600">
-                Browse from 20+ generators covering productivity, home,
-                learning, and wellness.
-              </p>
-            </div>
-            <div class="text-center">
-              <div
-                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
-              >
-                2
-              </div>
-              <h3 class="font-semibold text-navy mb-2">Customize It</h3>
-              <p class="text-sm text-slate-600">
-                Adjust dates, time slots, categories, and content to match your
-                needs exactly.
-              </p>
-            </div>
-            <div class="text-center">
-              <div
-                class="bg-indigo text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg"
-              >
-                3
-              </div>
-              <h3 class="font-semibold text-navy mb-2">Download & Print</h3>
-              <p class="text-sm text-slate-600">
-                Get a clean PDF ready for printing. Use it immediately on paper
-                or digitally.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About / SEO text -->
+      <!-- Preview Carousel Section -->
       <section
-        id="about"
-        class="bg-slate-50 py-16 md:py-20 border-t border-slate-200"
+        class="bg-gradient-to-b from-white to-slate-50 py-12 px-5 md:px-8"
       >
-        <div class="max-w-5xl mx-auto px-5 md:px-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-navy mb-4">
-            About MicroPlan Studio
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-3">
+            See How It Works
           </h2>
-          <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
-            MicroPlan Studio is a collection of focused, free planner generators
-            created for people who value simplicity and privacy. Each tool
-            creates a clean, printable PDF in seconds—no signup, no account,
-            just simple structure for your day, week, goals, home, school, and
-            wellness.
+          <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            Choose a planner, customize it, and download your PDF instantly
           </p>
-          <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-4">
-            We continuously add new tools and refine existing planners based on
-            how people actually use them. Our design philosophy is
-            straightforward: do one thing well. Every generator is optimized for
-            both digital customization and print quality.
+
+          <!-- Carousel Container -->
+          <div class="relative bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Carousel Slides -->
+            <div
+              class="carousel-wrapper overflow-hidden"
+              style="position: relative; width: 100%"
+            >
+              <div
+                class="carousel-slides flex transition-transform duration-300"
+                id="carouselSlides"
+                style="transform: translateX(0)"
+              >
+                <!-- Slide 1: Daily Planner -->
+                <div
+                  class="carousel-slide flex-shrink-0 w-full p-6 md:p-8"
+                  style="min-width: 100%"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+                  >
+                    <div>
+                      <h3 class="text-2xl font-bold text-navy mb-2">
+                        Daily Planner
+                      </h3>
+                      <p class="text-slate-600 mb-4">
+                        Plan your day with priorities, schedule blocks, and
+                        tasks.
+                      </p>
+                      <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Time-block your entire day</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Prioritize your top 3 goals</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Track tasks and progress</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Print and carry with you</span>
+                        </li>
+                      </ul>
+                      <button
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2 rounded-lg text-sm"
+                        onclick="
+                          document
+                            .getElementById('tools')
+                            .scrollIntoView({ behavior: 'smooth' });
+                          document
+                            .querySelector('[data-category=\'productivity\']')
+                            ?.click();
+                        "
+                      >
+                        Try Daily Planner →
+                      </button>
+                    </div>
+                    <div
+                      class="bg-slate-100 rounded-lg p-4 flex items-center justify-center border-2 border-slate-300"
+                    >
+                      <img
+                        src="assets/daily-planner.png"
+                        alt="Daily Planner Preview"
+                        class="object-contain"
+                        height="259"
+                        width="200"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Budget Planner -->
+                <div
+                  class="carousel-slide flex-shrink-0 w-full p-6 md:p-8"
+                  style="min-width: 100%"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+                  >
+                    <div>
+                      <h3 class="text-2xl font-bold text-navy mb-2">
+                        Budget Planner
+                      </h3>
+                      <p class="text-slate-600 mb-4">
+                        Track your income, expenses, and savings.
+                      </p>
+                      <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Categorize your spending</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Track income and expenses</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Monitor your savings goals</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Monthly summary and analysis</span>
+                        </li>
+                      </ul>
+                      <button
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2 rounded-lg text-sm"
+                        onclick="
+                          document
+                            .getElementById('tools')
+                            .scrollIntoView({ behavior: 'smooth' });
+                          document
+                            .querySelector('[data-category=\'home\']')
+                            ?.click();
+                        "
+                      >
+                        Try Budget Planner →
+                      </button>
+                    </div>
+                    <div
+                      class="bg-slate-100 rounded-lg p-4 aspect-video flex items-center justify-center border-2 border-slate-300"
+                    >
+                      <img
+                        src="assets/budget-planner.png"
+                        alt="Budget Planner Preview"
+                        class="object-contain"
+                        height="259"
+                        width="200"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Habit Tracker -->
+                <div
+                  class="carousel-slide flex-shrink-0 w-full p-6 md:p-8"
+                  style="min-width: 100%"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+                  >
+                    <div>
+                      <h3 class="text-2xl font-bold text-navy mb-2">
+                        Habit Tracker
+                      </h3>
+                      <p class="text-slate-600 mb-4">
+                        Build consistency with visual habit tracking.
+                      </p>
+                      <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Track multiple habits simultaneously</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Visual checkboxes for daily progress</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>See your consistency streaks</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Monthly habit summary</span>
+                        </li>
+                      </ul>
+                      <button
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2 rounded-lg text-sm"
+                        onclick="
+                          document
+                            .getElementById('tools')
+                            .scrollIntoView({ behavior: 'smooth' });
+                          document
+                            .querySelector('[data-category=\'wellness\']')
+                            ?.click();
+                        "
+                      >
+                        Try Habit Tracker →
+                      </button>
+                    </div>
+                    <div
+                      class="bg-slate-100 rounded-lg p-4 aspect-video flex items-center justify-center border-2 border-slate-300"
+                    >
+                      <img
+                        src="assets/habit-tracker.png"
+                        alt="Habit Tracker Preview"
+                        class="object-contain"
+                        height="259"
+                        width="200"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4: Weekly Planner -->
+                <div
+                  class="carousel-slide flex-shrink-0 w-full p-6 md:p-8"
+                  style="min-width: 100%"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+                  >
+                    <div>
+                      <h3 class="text-2xl font-bold text-navy mb-2">
+                        Weekly Planner
+                      </h3>
+                      <p class="text-slate-600 mb-4">
+                        Plan your entire week at a glance.
+                      </p>
+                      <ul class="space-y-2 text-sm text-slate-700 mb-6">
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>7-day weekly overview</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Plan goals for the week</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Daily task lists for each day</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                          <span class="text-indigo-600 font-bold">✓</span>
+                          <span>Space for notes and reflections</span>
+                        </li>
+                      </ul>
+                      <button
+                        class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2 rounded-lg text-sm"
+                        onclick="
+                          document
+                            .getElementById('tools')
+                            .scrollIntoView({ behavior: 'smooth' });
+                          document
+                            .querySelector('[data-category=\'productivity\']')
+                            ?.click();
+                        "
+                      >
+                        Try Weekly Planner →
+                      </button>
+                    </div>
+                    <div
+                      class="bg-slate-100 rounded-lg p-4 aspect-video flex items-center justify-center border-2 border-slate-300"
+                    >
+                      <img
+                        src="assets/weekly-planner.png"
+                        alt="Weekly Planner Preview"
+                        class="object-contain"
+                        height="259"
+                        width="200"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="flex justify-center items-center gap-4 p-4 bg-slate-50">
+              <button
+                class="bg-white hover:bg-slate-100 border border-slate-300 rounded-full p-2 w-10 h-10 flex items-center justify-center"
+                onclick="moveCarousel(-1)"
+                aria-label="Previous slide"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="flex gap-2">
+                <button
+                  class="carousel-dot w-2 h-2 rounded-full bg-indigo-600 cursor-pointer"
+                  onclick="goToSlide(0)"
+                ></button>
+                <button
+                  class="carousel-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer"
+                  onclick="goToSlide(1)"
+                ></button>
+                <button
+                  class="carousel-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer"
+                  onclick="goToSlide(2)"
+                ></button>
+                <button
+                  class="carousel-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer"
+                  onclick="goToSlide(3)"
+                ></button>
+              </div>
+
+              <button
+                class="bg-white hover:bg-slate-100 border border-slate-300 rounded-full p-2 w-10 h-10 flex items-center justify-center"
+                onclick="moveCarousel(1)"
+                aria-label="Next slide"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planner Menu Section -->
+      <section id="tools" class="bg-slate-50 py-8 md:py-10 px-5 md:px-8">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-3">
+            Choose Your Planner
+          </h2>
+          <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            Select any planner below to generate and customize your printable
+            PDF in seconds
           </p>
-          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
-            For premium, fully designed planner templates, visit
-            <a
-              href="https://www.etsy.com/shop/SystemCraftAIStudio"
-              target="_blank"
-              class="text-indigo font-semibold"
-              >SystemCraft AI Studio</a
-            >—MicroPlan Studio focuses on free generators, while SystemCraft
-            offers polished, customizable planners.
-          </p>
+
+          <!-- Tab Navigation -->
+          <div class="menu-tabs mb-8">
+            <div
+              id="tabButtons"
+              class="flex flex-wrap gap-2 justify-center mb-8"
+            >
+              <!-- Populated by main.js -->
+            </div>
+          </div>
+
+          <!-- Tab Content -->
+          <div id="tabContent" class="menu-grid-container">
+            <!-- Populated by main.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Generator Panel Section -->
+      <section class="bg-white py-8 md:py-12 px-5 md:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div id="generatorPanelPlaceholder" class="generator-panel empty">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+            <p class="text-lg">Select a planner from above to get started</p>
+          </div>
+          <div id="generatorPanelLoading" class="generator-panel hidden">
+            <div class="loading"></div>
+          </div>
+          <div id="generatorPanel" class="generator-panel hidden">
+            <h2 id="generatorHeader"></h2>
+            <p id="generatorIntro" class="text-slate-600"></p>
+            <div id="generatorUI" class="my-6"></div>
+            <button id="generateBtn" class="w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-4 py-2 rounded-lg text-sm">
+              Generate
+            </button>
+            <h3 class="text-lg font-semibold mt-6 mb-3">Preview</h3>
+            <div id="previewArea" class="bg-white border border-slate-200 rounded-lg p-2 overflow-y-auto mb-1"></div>
+            <button id="downloadBtn" class="hidden w-auto bg-green-600 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded-lg text-sm">
+              Download PDF
+            </button>
+            <div id="relatedTools" class="mt-2"></div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upsell Banner #2 -->
+      <section class="bg-slate-50 py-4 px-5 md:px-6">
+        <div class="upsell-banner max-w-4xl mx-auto">
+          <div
+            class="flex items-center gap-4 justify-center flex-col sm:flex-row"
+          >
+            <div>
+              <p class="text-lg font-semibold mb-2">Love Our Free Tools?</p>
+              <p class="text-base opacity-90 mb-4">
+                Want professionally designed, premium planners and bundles?
+              </p>
+              <p class="text-lg opacity-90 mb-2">
+                <a
+                  href="https://www.etsy.com/shop/SystemCraftAIStudio"
+                  target="_blank"
+                >
+                  Visit SystemCraft AI Studio
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="footer-section mt-1 pt-0 pb-3">
+        <div class="max-w-6xl mt-1 pt-1 mx-auto px-5 md:px-8">
+          <h3 class="text-2xl font-bold text-navy mt-2 mb-6 text-center">
+            Why MicroPlan Studio?
+          </h3>
+          <div class="columns-1 md:columns-2 gap-8 mb-8">
+            <p>
+              Most people fail at planning because the process is too
+              complicated, too intrusive, or too rigid. MicroPlan Studio
+              reimagines planning as a collection of small, focused tools—one
+              for each area of your life. Daily planning, weekly reviews,
+              fitness tracking, budget management, study planning, habit
+              building. Instead of a massive all-in-one app, we give you 21
+              micro-tools you can customize, print, and use offline. Every
+              planner generator is designed for privacy and focus. No accounts.
+              No tracking (beyond basic, anonymous analytics). No intrusive
+              marketing. No forced subscriptions. Just clean, functional tools
+              that work offline. Download your planner, print it, and plan with
+              intention. Whether you're optimizing productivity, managing home,
+              tracking wellness, or pursuing goals, we have a tool for that.
+              Start planning today — free, forever.
+            </p>
+          </div>
+
+          <div class="footer-links mt-2 pt-2">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="text-center mt-2 pt-2 border-t border-slate-300 text-sm">
+            <p>© 2026 MicroPlan Studio — Free planner tools</p>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-slate-200 bg-white py-6 mt-4">
-      <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-col gap-4">
-        <div
-          class="flex flex-col md:flex-row items-center justify-between gap-3"
-        >
-          <p class="text-xs text-slate-500">
-            © 2026 MicroPlan Studio — Free planner tools
-          </p>
-          <div class="flex items-center gap-4 text-xs text-slate-500">
-            <a href="/about.html" class="hover:text-navy"> About </a>
-            <span>•</span>
-            <a href="/contact.html" class="hover:text-navy"> Contact </a>
-            <span>•</span>
-            <a href="/privacy-policy.html" class="hover:text-navy"> Privacy </a>
-            <span>•</span>
-            <a href="/terms-of-service.html" class="hover:text-navy"> Terms </a>
-          </div>
-        </div>
-        <div
-          class="text-center text-xs text-slate-400 border-t border-slate-100 pt-3"
-        >
-          <p>
-            Site actively maintained and monitored for stability and
-            performance.
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-    </script>
+    <script src="main.js"></script>
+    <script src="page-utils.js"></script>
   </body>
 </html>

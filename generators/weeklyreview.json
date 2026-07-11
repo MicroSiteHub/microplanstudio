@@ -1,0 +1,23 @@
+{
+  "name": "Weekly Review",
+  "category": "productivity",
+  "title": "Weekly Review Generator",
+  "tagline": "Reflect on your week and plan ahead.",
+  "description": "Generate a printable weekly review PDF with prompts and reflection sections.",
+  "og_description": "Create a simple, printable weekly review PDF in seconds.",
+  "intro": "Reflection transforms experience into growth. This free weekly review generator creates a guided workbook that prompts you to review the week, celebrate wins, acknowledge challenges, and plan next week. Most people move from week to week without pausing—missing lessons, repeating mistakes, and losing momentum. A structured review session changes that by building self-awareness and intentionality. This tool provides prompts for achievements, learnings, obstacles, priorities, and next-week goals. Spend 30 minutes in reflection, write your answers, and approach the next week with clarity and momentum. Whether you're optimizing for productivity, personal growth, or goal achievement, weekly reviews compound improvements over time. One small reflection session per week creates dramatic transformation.",
+  "seo": {
+    "p1": "This free weekly review generator helps you reflect on progress and plan ahead.",
+    "p2": "Ideal for productivity, journaling, and goal tracking. No signup required."
+  },
+  "related": [
+    "weekly",
+    "goals",
+    "daily",
+    "habits"
+  ],
+  "cross": [
+    "water",
+    "study"
+  ]
+}

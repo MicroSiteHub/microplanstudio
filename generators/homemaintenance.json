@@ -1,0 +1,23 @@
+{
+  "name": "Home Maintenance Log",
+  "category": "home",
+  "title": "Home Maintenance Log Generator",
+  "tagline": "Track repairs, inspections, and home upkeep.",
+  "description": "Generate a printable home maintenance log PDF for repairs and upkeep.",
+  "og_description": "Create a simple, printable home maintenance log PDF in seconds.",
+  "intro": "Home maintenance records protect your investment and keep your property in top condition. This free home maintenance log generator creates a customizable log for tracking repairs, inspections, service dates, and costs. Whether you're a homeowner, renter, or property manager, maintaining records helps prove that upkeep has occurred, supports insurance claims, increases resale value, and prevents costly emergency repairs. Log HVAC services, plumbing work, roof inspections, or appliance repairs—anything that keeps your property running smoothly. Generate a printable or digital log you can keep in a binder, share with tenants, or store digitally. Regular maintenance visibility equals lower long-term costs and a healthier home.",
+  "seo": {
+    "p1": "This free home maintenance log generator helps you track repairs and upkeep.",
+    "p2": "Perfect for homeowners, renters, and property managers."
+  },
+  "related": [
+    "cleaning",
+    "chores",
+    "budget",
+    "monthly"
+  ],
+  "cross": [
+    "fitness",
+    "reading"
+  ]
+}

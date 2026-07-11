@@ -1,0 +1,23 @@
+{
+  "name": "To-Do List",
+  "category": "productivity",
+  "title": "To-Do List Generator",
+  "tagline": "Create a clean, printable task list.",
+  "description": "Generate a printable to-do list PDF with tasks, priorities, and notes.",
+  "og_description": "Create a simple, printable to-do list PDF in seconds.",
+  "intro": "Get everything out of your head and onto a list you can actually manage. This free to-do list generator creates a printable task list that helps you capture, prioritize, and execute. Mental clutter from unwritten tasks drains focus and creates anxiety—your brain is busy remembering instead of thinking strategically. A simple printed to-do list offloads that burden, freeing mental energy for actual work. This generator lets you quickly add tasks, prioritize them, add notes, and generate a clean, printable list. Check off completed items for a sense of progress, cross off old tasks, and refocus your list weekly. An organized to-do list is the foundation of productive days—simple, powerful, and surprisingly effective.",
+  "seo": {
+    "p1": "This free to-do list generator helps you organize tasks with priorities and notes.",
+    "p2": "Perfect for productivity, work, and home planning. No signup required."
+  },
+  "related": [
+    "daily",
+    "weekly",
+    "timeblock",
+    "project"
+  ],
+  "cross": [
+    "mood",
+    "meals"
+  ]
+}

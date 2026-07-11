@@ -3,193 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>About MicroPlan Studio</title>
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
 
-      :root {
-        --brand: #6366f1;
-        --brand-light: #eef2ff;
-        --text: #1e293b;
-        --muted: #64748b;
-        --border: #e2e8f0;
-        --bg: #f8fafc;
-        --white: #ffffff;
-        --radius: 8px;
-        --max-w: 780px;
-      }
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="common.css" />
 
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family:
-          "Inter",
-          "Segoe UI",
-          system-ui,
-          -apple-system,
-          sans-serif;
-        font-size: 16px;
-        line-height: 1.75;
-        color: var(--text);
-        background: var(--bg);
-      }
-
-      /* ── Header ── */
-      header {
-        background: var(--white);
-        border-bottom: 1px solid var(--border);
-        padding: 0 24px;
-      }
-      .header-inner {
-        max-width: var(--max-w);
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 18px 0;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: var(--text);
-      }
-      .logo-mark {
-        width: 32px;
-        height: 32px;
-        background: var(--brand);
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        font-weight: 700;
-        font-size: 16px;
-        color: #fff;
-      }
-      .logo-text {
-        font-weight: 700;
-        font-size: 16px;
-        color: var(--text);
-      }
-      .nav-link {
-        color: var(--muted);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        transition: color 0.2s ease;
-      }
-      .nav-link:hover {
-        color: var(--brand);
-      }
-
-      /* ── Hero banner ── */
-      .hero {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        color: #fff;
-        padding: 64px 24px 56px;
-        text-align: center;
-      }
-      .hero h1 {
-        font-size: clamp(28px, 6vw, 40px);
-        font-weight: 800;
-        letter-spacing: -0.5px;
-        margin-bottom: 12px;
-      }
-      .hero p {
-        font-size: 16px;
-        opacity: 0.8;
-        max-width: 500px;
-        margin: 0 auto;
-      }
-
-      /* ── Main content ── */
-      .content {
-        max-width: var(--max-w);
-        margin: 0 auto;
-        padding: 60px 24px;
-      }
-
-      .content h2 {
-        font-size: 24px;
-        font-weight: 700;
-        color: var(--text);
-        margin-bottom: 16px;
-        margin-top: 36px;
-      }
-
-      .content h2:first-of-type {
-        margin-top: 0;
-      }
-
-      .content p {
-        margin-bottom: 18px;
-        color: var(--text);
-      }
-
-      .mission {
-        background: var(--brand-light);
-        border-left: 4px solid var(--brand);
-        padding: 20px;
-        border-radius: var(--radius);
-        margin: 28px 0;
-      }
-
-      .mission p {
-        margin: 0;
-        font-weight: 500;
-        color: var(--brand);
-      }
-
-      /* ── Footer ── */
-      footer {
-        background: var(--white);
-        border-top: 1px solid var(--border);
-        padding: 24px;
-        text-align: center;
-        margin-top: 60px;
-      }
-      .footer-inner {
-        max-width: var(--max-w);
-        margin: 0 auto;
-      }
-      .footer-link {
-        color: var(--brand);
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
-        transition: opacity 0.2s ease;
-      }
-      .footer-link:hover {
-        opacity: 0.7;
-      }
-      .divider {
-        color: var(--border);
-        margin: 0 8px;
-      }
-    </style>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
 
-  <body>
-    <header>
-      <div class="header-inner">
+  <body class="bg-white text-slate-800">
+    <!-- Top nav -->
+    <nav
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/60"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16"
+      >
         <a href="/" class="logo">
-          <div class="logo-mark">M</div>
-          <span class="logo-text">MicroPlan Studio</span>
+          <div class="logo-mark">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon"
+            >
+              <path
+                d="M3 3h7v7H3V3zm11 0h7v7h-7V3zM3 14h7v7H3v-7zm11 3.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0z"
+              />
+            </svg>
+          </div>
+          <span class="logo-text">MicroPlan <span>Studio</span></span>
         </a>
-        <a href="/" class="nav-link">← Back to Home</a>
+
+        <span
+          id="headerPageTitle"
+          class="hidden text-base md:text-lg font-bold text-slate-700 md:inline"
+          style="margin-left: 2rem; opacity: 0; transition: opacity 0.3s"
+        >
+          About MicroPlan Studio
+        </span>
+
+        <div class="nav-container md:flex">
+          <a
+            href="/"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+            >About</a
+          >
+          <a
+            href="/contact.html"
+            class="nav-link text-sm font-medium text-slate-600 hover:text-navy"
+            >Contact</a
+          >
+        </div>
       </div>
-    </header>
+    </nav>
 
     <div class="hero">
       <h1>About MicroPlan Studio</h1>
@@ -236,20 +110,20 @@
 
       <h2>Categories</h2>
       <p>Our growing collection of generators spans five main categories:</p>
-      <ul style="margin-left: 20px; margin-bottom: 18px; color: var(--text)">
-        <li style="margin-bottom: 8px">
+      <ul class="list-styled">
+        <li class="list-item">
           <strong>Productivity:</strong> Daily, weekly, and monthly planners,
           time blocking, project planning, and goal setting.
         </li>
-        <li style="margin-bottom: 8px">
+        <li class="list-item">
           <strong>Home:</strong> Budget tracking, chore charts, cleaning
           schedules, and maintenance logs.
         </li>
-        <li style="margin-bottom: 8px">
+        <li class="list-item">
           <strong>Learning:</strong> Study planners and reading logs to track
           your educational progress.
         </li>
-        <li style="margin-bottom: 8px">
+        <li class="list-item">
           <strong>Wellness:</strong> Habit trackers, fitness planners, mood
           journals, sleep logs, water intake trackers, and gratitude journals.
         </li>
@@ -271,7 +145,7 @@
         <a
           href="https://www.etsy.com/shop/SystemCraftAIStudio"
           target="_blank"
-          style="color: var(--brand); font-weight: 600; text-decoration: none"
+          class="content-link"
         >
           SystemCraft AI Studio</a
         >. MicroPlan Studio focuses on free generators, while SystemCraft offers
@@ -280,21 +154,21 @@
       </p>
     </div>
 
-    <footer>
-      <div class="footer-inner">
-        <a href="/" class="footer-link">Home</a>
-        <span class="divider">•</span>
-        <a href="/about.html" class="footer-link">About</a>
-        <span class="divider">•</span>
-        <a href="/contact.html" class="footer-link">Contact</a>
-        <span class="divider">•</span>
-        <a href="/privacy-policy.html" class="footer-link">Privacy</a>
-        <span class="divider">•</span>
-        <a href="/terms-of-service.html" class="footer-link">Terms</a>
-        <p style="margin-top: 16px; font-size: 13px; color: var(--muted)">
-          © 2026 MicroPlan Studio. All rights reserved.
-        </p>
+    <!-- Footer -->
+    <section class="footer-section mt-1 pt-0 pb-3">
+      <div class="max-w-6xl mt-1 mx-auto px-5 md:px-8">
+        <div class="footer-links mt-1 pt-2">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="text-center mt-2 pt-2 border-t border-slate-300 text-sm">
+          <p>© 2026 MicroPlan Studio — Free planner tools</p>
+        </div>
       </div>
-    </footer>
+    </section>
+    <script src="page-utils.js"></script>
   </body>
 </html>

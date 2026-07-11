@@ -1,0 +1,23 @@
+{
+  "name": "Fitness Planner",
+  "category": "wellness",
+  "title": "Fitness Planner Generator",
+  "tagline": "Track workouts, cardio, habits, and progress.",
+  "description": "Generate a clean, printable fitness planner PDF in seconds.",
+  "og_description": "Create a simple, printable fitness planner PDF in seconds.",
+  "intro": "Fitness consistency beats intensity every time, but most people quit because they lack motivation and tracking. This free fitness planner generator creates a printable workout log that tracks exercises, sets, reps, cardio sessions, and body metrics over time. Seeing visual progress builds momentum and keeps you motivated through plateaus. Whether you're starting a gym routine, training at home, or optimizing performance, logging workouts ensures accountability and prevents skipped sessions. Track strength training, cardio, goals, personal records, and how workouts made you feel. Print weekly or monthly logs, review your progress, and adjust as needed. A simple fitness log transforms vague exercise intentions into a sustainable practice—and gives you proof of your growing strength and capability.",
+  "seo": {
+    "p1": "This free fitness planner generator helps you organize strength training, cardio, habits, and body metrics.",
+    "p2": "Perfect for gym routines, home workouts, and weekly fitness planning."
+  },
+  "related": [
+    "habits",
+    "water",
+    "sleep",
+    "mood"
+  ],
+  "cross": [
+    "weekly",
+    "meals"
+  ]
+}

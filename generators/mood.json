@@ -1,0 +1,23 @@
+{
+  "name": "Mood Tracker",
+  "category": "wellness",
+  "title": "Mood Tracker Generator",
+  "tagline": "Track your mood and emotional patterns.",
+  "description": "Generate a printable mood tracker PDF for daily emotional logs.",
+  "og_description": "Create a simple, printable mood tracker PDF in seconds.",
+  "intro": "Emotional awareness is the foundation of mental health, yet most people never track or examine their mood patterns. This free mood tracker generator creates a printable log where you record daily moods, note triggering events, and discover what influences your wellbeing. Over time, patterns emerge: certain activities lift your mood, specific stressors drain you, and tracking itself builds self-awareness. Whether you're managing anxiety, depression, or simply optimizing happiness, a mood journal becomes your personal therapist. Rate your mood daily, note the context, and add thoughts or observations. Print weekly or monthly views and review patterns. Many discover that small changes—more sleep, less social media, brief meditation—dramatically shift their emotional baseline. Self-awareness through tracking is the first step toward emotional resilience and improved mental health.",
+  "seo": {
+    "p1": "This free mood tracker generator helps you track emotional patterns and wellbeing.",
+    "p2": "Ideal for mental health, journaling, and self-awareness."
+  },
+  "related": [
+    "habits",
+    "fitness",
+    "water",
+    "sleep"
+  ],
+  "cross": [
+    "daily",
+    "goals"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Reading Log",
+  "category": "learning",
+  "title": "Reading Log Generator",
+  "tagline": "Track books, pages, and reading progress.",
+  "description": "Generate a printable reading log PDF for books and reading goals.",
+  "og_description": "Create a simple, printable reading log PDF in seconds.",
+  "intro": "Reading is transformative, but many readers never finish books because they lose track of progress and context. This free reading log generator creates a printable tracker that records every book you read, captures key takeaways, and builds accountability for your reading goals. Whether you're a student, book lover, or professional seeking growth, logging your reading motivates completion and preserves lessons. Track book title, author, pages read, completion date, and personal notes or quotes. Print weekly or monthly logs, see your reading patterns emerge, and celebrate your learning journey. A simple reading log turns casual reading into a growth practice—and gives you a permanent record of every book that changed your thinking.",
+  "seo": {
+    "p1": "This free reading log generator helps you track books, pages, and reading progress.",
+    "p2": "Ideal for students, book lovers, and reading challenges."
+  },
+  "related": [
+    "study",
+    "daily",
+    "weekly",
+    "goals"
+  ],
+  "cross": [
+    "sleep",
+    "mood"
+  ]
+}

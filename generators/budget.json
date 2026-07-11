@@ -1,0 +1,23 @@
+{
+  "name": "Budget Planner",
+  "category": "home",
+  "title": "Budget Planner Generator",
+  "tagline": "Track expenses, income, and savings.",
+  "description": "Generate a printable budget planner PDF for monthly finances.",
+  "og_description": "Create a simple, printable budget planner PDF in seconds.",
+  "intro": "Gain control of your finances with this free budget planner generator. Whether you're managing household expenses, planning for savings, or tracking income from multiple sources, this tool helps you visualize where your money goes each month. Many people struggle with overspending because they lack a clear picture of their financial habits. This generator creates a customizable, printable budget template in seconds. Simply enter your income, list your expenses, and watch the totals calculate automatically. Print it out, save it, or share it with your family for transparent financial planning.",
+  "seo": {
+    "p1": "This free budget planner generator helps you track expenses and savings.",
+    "p2": "Ideal for personal finance, home budgeting, and money management."
+  },
+  "related": [
+    "meals",
+    "homemaintenance",
+    "cleaning",
+    "chores"
+  ],
+  "cross": [
+    "daily",
+    "sleep"
+  ]
+}
